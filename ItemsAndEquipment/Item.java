@@ -14,13 +14,15 @@ public class Item {
     }
 
     public void mentionSelf(Item item) {
-        Field[] fields = item.getClass().getDeclaredFields();
+        Field[] fields = item.getClass().getFields();
         for (Field field : fields) {
             try {
-                System.out.println(field.get(item));
+                field.setAccessible(true);
+                System.out.println(field.getName() + ": " + field.get(item));
             } catch (IllegalAccessException e) {
                 e.printStackTrace();
             }
         }
+        System.out.println("");
     }
 }
