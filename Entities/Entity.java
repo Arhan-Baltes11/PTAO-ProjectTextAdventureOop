@@ -14,6 +14,6 @@ public class Entity {
         int damageOutput = (int) (Math.random() * range) + AttackMin;
         damageOutput = damageOutput - player.EquippedArmor.Defence;
         player.Health = player.Health - damageOutput;
-        System.out.println("Damage has been dealt! " + damageOutput + "!");
+        System.out.println("Foe has dealt damage! It deals " + damageOutput + " damage!");
     }
 }

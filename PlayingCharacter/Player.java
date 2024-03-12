@@ -3,11 +3,11 @@ package PlayingCharacter;
 import ItemsAndEquipment.*;
 import java.util.ArrayList;
 
-import Entities.Hostile.Enemies.Enemy;
+import Entities.Entity;
 
 public class Player {
 
-    public String Name = "Roald van Hertogenbosch";
+    public String Name = "Roald";
 
     public int Health = 20;
 
@@ -33,8 +33,11 @@ public class Player {
         equipArmor((Armor) Inventory.get(1));
     }
 
-    public void attack(Enemy target) {
-
+    public void attack(Entity target) {
+        int range = EquippedWeapon.DamageOutputMax + EquippedWeapon.DamageOutputMin + 1;
+        int damageOutput = (int) (Math.random() * range) + EquippedWeapon.DamageOutputMin;
+        target.Health = target.Health - damageOutput;
+        System.out.println(Name + " attacks the creature! You deal " + damageOutput + " damage!");
     }
 
     public void checkInventory() {
