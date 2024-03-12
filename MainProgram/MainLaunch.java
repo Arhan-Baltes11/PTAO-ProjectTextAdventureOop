@@ -1,13 +1,10 @@
 package MainProgram;
 
- import ItemsAndEquipment.*;
-
 public class MainLaunch {
     public static void main(String[] args) {
-        System.out.println("Program Lunch");
-        Item itemOne = new Item("Implicit Potion", "Dragon Potion that is implicit");
-        Weapon swordOne = new Weapon("Sword", "A longsword");
-        swordOne.mentionSelf(swordOne);
-        itemOne.mentionSelf(itemOne);
+        System.out.println("PTAO - CURSED GEM OF NATAL - wip title");
+        System.out.println("Version: 1.0.0 - Dawn");
+        System.out.println("");
+        GameLoad.StartGame();
     }
 }
