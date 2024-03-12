@@ -9,6 +9,10 @@ public class Player {
 
     public ArrayList<Item> Inventory = new ArrayList<Item>();
 
+    private Weapon _equippedWeapon;
+
+    private Armor _equippedArmor;
+
     public Player() {
         Inventory.add(new Weapon("Shortsword", "A shortsword made of simple metal."));
         Inventory.add(new Armor("Common Clohing", "Clothing worn by commoners. Better than nothing."));
@@ -19,6 +23,8 @@ public class Player {
                 toEquip.IsEquipped = true;
             }
         }
+        equipWeapon((Weapon) Inventory.get(0));
+        equipArmor((Armor) Inventory.get(1));
     }
 
     public void checkInventory() {
@@ -33,5 +39,15 @@ public class Player {
             }
             System.out.println(itemInInventory);
         }
+    }
+
+    public void equipWeapon(Weapon weapon) {
+        _equippedWeapon = weapon;
+        System.out.println(weapon.Name + " Has been equipped.");
+    }
+
+    public void equipArmor(Armor armor) {
+        _equippedArmor = armor;
+        System.out.println(armor.Name + " Has been equipped.");
     }
 }
