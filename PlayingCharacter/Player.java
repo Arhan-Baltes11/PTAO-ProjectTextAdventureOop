@@ -3,6 +3,8 @@ package PlayingCharacter;
 import ItemsAndEquipment.*;
 import java.util.ArrayList;
 
+import Hostile.Enemies.Enemy;
+
 public class Player {
 
     public String Name = "Roald van Hertogenbosch";
@@ -14,7 +16,7 @@ public class Player {
     private Armor _equippedArmor;
 
     public Player() {
-        Inventory.add(new Weapon("Shortsword", "A shortsword made of simple metal."));
+        Inventory.add(new Weapon("Shortsword", "A shortsword made of simple metal.", 1, 6));
         Inventory.add(new Armor("Common Clohing", "Clothing worn by commoners. Better than nothing."));
         Inventory.add(new Item("Potion of Minor Healing", "A Potion that cures 5health from the player."));
         for (Item equips : Inventory) {
@@ -25,6 +27,10 @@ public class Player {
         }
         equipWeapon((Weapon) Inventory.get(0));
         equipArmor((Armor) Inventory.get(1));
+    }
+
+    public void attack(Enemy target) {
+
     }
 
     public void checkInventory() {

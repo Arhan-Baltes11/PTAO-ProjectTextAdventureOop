@@ -1,4 +1,4 @@
-package Hostility;
+package Entities;
 
 public class RandomEncounters {
 
