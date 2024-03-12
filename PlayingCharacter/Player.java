@@ -3,21 +3,25 @@ package PlayingCharacter;
 import ItemsAndEquipment.*;
 import java.util.ArrayList;
 
-import Hostile.Enemies.Enemy;
+import Entities.Hostile.Enemies.Enemy;
 
 public class Player {
 
     public String Name = "Roald van Hertogenbosch";
 
+    public int Health = 20;
+
+    public int MaxHealth = 20;
+
     public ArrayList<Item> Inventory = new ArrayList<Item>();
 
-    private Weapon _equippedWeapon;
+    public Weapon EquippedWeapon;
 
-    private Armor _equippedArmor;
+    public Armor EquippedArmor;
 
     public Player() {
-        Inventory.add(new Weapon("Shortsword", "A shortsword made of simple metal.", 1, 6));
-        Inventory.add(new Armor("Common Clohing", "Clothing worn by commoners. Better than nothing."));
+        Inventory.add(new Weapon("Shortsword", 1, 6, "A shortsword made of simple metal."));
+        Inventory.add(new Armor("Common Clohing", 1, "Clothing worn by commoners. Better than nothing."));
         Inventory.add(new Item("Potion of Minor Healing", "A Potion that cures 5health from the player."));
         for (Item equips : Inventory) {
             if (equips instanceof Equipment) {
@@ -48,12 +52,12 @@ public class Player {
     }
 
     public void equipWeapon(Weapon weapon) {
-        _equippedWeapon = weapon;
+        EquippedWeapon = weapon;
         System.out.println(weapon.Name + " Has been equipped.");
     }
 
     public void equipArmor(Armor armor) {
-        _equippedArmor = armor;
+        EquippedArmor = armor;
         System.out.println(armor.Name + " Has been equipped.");
     }
 }
