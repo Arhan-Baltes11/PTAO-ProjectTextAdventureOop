@@ -8,6 +8,10 @@ Git repository started on: 11th of March 2024.
 
 ## Changelog
 
+### V 0.0.3 - Butler
+ - Added org/json to allow Json files to be read.
+ - Usage of canonical path to let files be read while the project loads.
+
 
 ### V 0.0.2 - Strife
  - Added Combat Mechanics

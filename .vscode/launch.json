@@ -12,9 +12,9 @@
         },
         {
             "type": "java",
-            "name": "MainLaunch",
+            "name": "Main",
             "request": "launch",
-            "mainClass": "MainProgram.MainLaunch",
+            "mainClass": "src.main.java.Main",
             "projectName": "ProjectTextAdventureOop_d5c51ecb"
         }
     ]
