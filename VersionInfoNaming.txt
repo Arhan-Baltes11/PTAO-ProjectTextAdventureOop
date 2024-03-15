@@ -1,0 +1,3 @@
+Version: 0.0.1 - Dawn - Named as it's the first valid version of the project
+Version: 0.0.2 - Strife - A synonym for combat, as it's the earliest combat build
+Version: 0.0.3 - Butler - Named due to organising the project with JSON files, as well as restructuring the project
