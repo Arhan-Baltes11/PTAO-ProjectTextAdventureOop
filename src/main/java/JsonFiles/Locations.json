@@ -1,0 +1,10 @@
+{
+  "Grid1": {
+    "Type": "Mountain",
+    "Weather": "Snowstorm",
+    "IsPassable": false,
+    "Coordinates": [1, 1],
+    "Items": [],
+    "Entities": []
+  }
+}
