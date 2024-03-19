@@ -1,0 +1,74 @@
+{
+  "item1": {
+    "Type": "Item",
+    "Name": "10 Silver Coins",
+    "Description": "10 silver coins that can be used for bartering. You can probably convert these into gold, though that level of alchemy is beyond you."
+  },
+  "item2": {
+    "Type": "Weapon",
+    "Name": "The Dragonslayer",
+    "Description": "A gigantic blade that's too unwieldy to be called a sword. One has to have insane strength to handle such a weapon.",
+    "DamageOutputMin": 10,
+    "DamageOutputMax": 30
+  },
+  "item3": {
+    "Type": "Armor",
+    "Name": "Chainmail",
+    "Description": "Quality Chainmail that is capable of blocking most blows.",
+    "Defence": 3
+  },
+  "item4": {
+    "Type": "Item",
+    "Name": "Kraken's Tongue",
+    "Description": "Not exactly the tongue of the kraken, but something close to it. It's enchanted to protect a user from a curse that instantly kills a person."
+  },
+  "item5": {
+    "Type": "Item",
+    "Name": "9 Gold Coins",
+    "Description": "9 gold coins in a pouch. You can probably use this to trade with a merchant somewhere."
+  },
+  "item6": {
+    "Type": "Item",
+    "Name": "A Piece of Silver",
+    "Description": "An enchanted piece of silver that is capable of blinding anyone that it comes into contact with, if thrown."
+  },
+  "item7": {
+    "Type": "Item",
+    "Name": "A Red Herring",
+    "Description": "A fish that seems to be cured relatively well, yet the smell of it makes your head hurt."
+  },
+  "item8": {
+    "Type": "Weapon",
+    "Name": "Longsword",
+    "Description": "A sword that's generally longer than the shortsword",
+    "DamageOutputMin": 4,
+    "DamageOutputMax": 12
+  },
+  "item9": {
+    "Type": "Item",
+    "Name": "Glasses",
+    "Description": "Glasses with a label on the side that says 'R.K'"
+  },
+  "item10": {
+    "Type": "Weapon",
+    "Name": "Singing Axe",
+    "Description": "An axe that has a habit of singing when swung, caused by air holes that create a distinct noise.",
+    "DamageOutputMin": 7,
+    "DamageOutputMax": 16
+  },
+  "item11": {
+    "Type": "Item",
+    "Name": "Grimoire of an Aging Occultist",
+    "Description": "'I know nought of whether anyone will come to notice this grimoire, but this book tells me that there is a great terror arising from the caverns. I wanted out a long ago, but now, I'm afraid it's too late to stop the rise of the Great Beast. One will have to use the Dragonslayer to truly defeat him, but the key is in safe keeping.'"
+  },
+  "item12": {
+    "Type": "Item",
+    "Name": "Cornerstone",
+    "Description": "A stone that is said to only be found at the corner of the world."
+  },
+  "item13": {
+    "Type": "Item",
+    "Name": "Engraved Key",
+    "Description": "A key that has an engraving of a being with an imposing face. Perhaps you can open a door with this?"
+  }
+}

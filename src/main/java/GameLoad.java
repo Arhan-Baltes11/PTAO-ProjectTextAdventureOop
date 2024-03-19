@@ -4,10 +4,15 @@ import src.main.java.Entities.Hostile.Enemies.Enemy;
 import src.main.java.PlayingCharacter.Player;
 import src.main.java.FileReader.ReadJsonDoc;
 import src.main.java.FileReader.WriteLocation;
+import src.main.java.WorldMap.Location;
+import src.org.json.JSONArray;
 import src.org.json.JSONObject;
 
 import java.io.File;
+import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Iterator;
 
 
 // The point of this class is to set up the game. It also eliminates code from psvm
@@ -16,7 +21,9 @@ public class GameLoad {
         try {
             Scanner comm = new Scanner(System.in);
             String pathCanon = new File(".").getCanonicalPath();
-            WriteLocation.jsonLocationGrid(pathCanon + "/src/main/java/JsonFiles/Locations.json");
+            String readLocations = ReadJsonDoc.readObject(pathCanon + "/src/main/java/JsonFiles/Locations.json");
+            JSONObject objectFile = new JSONObject(readLocations);
+
         } catch (Exception e) {
             e.printStackTrace();
         }

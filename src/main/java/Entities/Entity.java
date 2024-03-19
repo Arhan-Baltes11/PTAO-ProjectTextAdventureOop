@@ -5,6 +5,7 @@ import java.lang.Math;
 import src.main.java.PlayingCharacter.Player;
 
 public class Entity {
+    public String Name;
     public int Health;
     public int AttackMin;
     public int AttackMax;

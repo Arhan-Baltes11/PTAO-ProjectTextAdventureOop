@@ -20,13 +20,25 @@ public class Location {
             int xAx,
             int yAx,
             Boolean passability,
-            Item[] items) {
+            Item[] items, Entity[] entities) {
         Type = locType;
         Weather = locWeather;
         Coordinates.add(xAx, yAx);
         IsPassable = passability;
-        for (int i = 0; i < items.length; i++) {
-            Items.add(items[i]);
+        for (Item item : items) {
+            if (item.Name == "") {
+                break;
+            } else {
+                Items.add(item);
+            }
+        }
+
+        for (Entity being : entities) {
+            if (being.Name == "") {
+                break;
+            } else {
+                Entities.add(being);
+            }
         }
     }
 }

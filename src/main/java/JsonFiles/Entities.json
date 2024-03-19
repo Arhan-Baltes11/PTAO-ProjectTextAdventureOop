@@ -1,0 +1,14 @@
+{
+  "EntityOne": {
+    "Name": "Elder Beast",
+    "Health": 100,
+    "AttackMin": 10,
+    "AttackMax": 20
+  },
+  "EntityTwo": {
+    "Name": "Armed Merchant",
+    "Health": 25,
+    "AttackMin": 5,
+    "AttackMax": 10
+  }
+}

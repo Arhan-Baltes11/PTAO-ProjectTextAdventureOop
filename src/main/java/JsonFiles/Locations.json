@@ -1,0 +1,1802 @@
+{
+  "Grid1": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [1, 1],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid2": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [1, 2],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid3": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [1, 3],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid4": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [1, 4],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid5": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [1, 5],
+    "Items": ["A Red Herring"],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid6": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [1, 6],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid7": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [1, 7],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid8": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [1, 8],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid9": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [1, 9],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid10": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [1, 10],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid11": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [1, 11],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid12": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [1, 12],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid13": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [1, 13],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid14": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [1, 14],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid15": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [1, 15],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid16": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [2, 1],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid17": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [2, 2],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid18": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [2, 3],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid19": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [2, 4],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid20": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [2, 5],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid21": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [2, 6],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid22": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [2, 7],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid23": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [2, 8],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid24": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [2, 9],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid25": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [2, 10],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid26": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [2, 11],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid27": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [2, 12],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid28": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [2, 13],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid29": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [2, 14],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid30": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [2, 15],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid31": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [3, 1],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid32": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [3, 2],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid33": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [3, 3],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid34": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [3, 4],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid35": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [3, 5],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid36": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [3, 6],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid37": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [3, 7],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid38": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [3, 8],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid39": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [3, 9],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid40": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [3, 10],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid41": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [3, 11],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid42": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [3, 12],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid43": {
+    "Weather": "SnowStorm",
+    "Type": "Doorway",
+    "Coordinates": [3, 13],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid44": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [3, 14],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid45": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [3, 15],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid46": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [4, 1],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid47": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [4, 2],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid48": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [4, 3],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid49": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [4, 4],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid50": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [4, 5],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid51": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [4, 6],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid52": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [4, 7],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid53": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [4, 8],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid54": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [4, 9],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid55": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [4, 10],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid56": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [4, 11],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid57": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [4, 12],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid58": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [4, 13],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid59": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [4, 14],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid60": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [4, 15],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid61": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [5, 1],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid62": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [5, 2],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid63": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [5, 3],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid64": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [5, 4],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid65": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [5, 5],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid66": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [5, 6],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid67": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [5, 7],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid68": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [5, 8],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid69": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [5, 9],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid70": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [5, 10],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid71": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [5, 11],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid72": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [5, 12],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid73": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [5, 13],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid74": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [5, 14],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid75": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [5, 15],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid76": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [6, 1],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid77": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [6, 2],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid78": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [6, 3],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid79": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [6, 4],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid80": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [6, 5],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid81": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [6, 6],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid82": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [6, 7],
+    "Items": ["Kraken's Tongue"],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid83": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [6, 8],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid84": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [6, 9],
+    "Items": ["10 silver coins"],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid85": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [6, 10],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid86": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [6, 11],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid87": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [6, 12],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid88": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [6, 13],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid89": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [6, 14],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid90": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [6, 15],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid91": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [7, 1],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid92": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [7, 2],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid93": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [7, 3],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid94": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [7, 4],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid95": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [7, 5],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid96": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [7, 6],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid97": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [7, 7],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid98": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [7, 8],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid99": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [7, 9],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": ["Armed Merchant"]
+  },
+  "Grid100": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [7, 10],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid101": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [7, 11],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid102": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [7, 12],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid103": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [7, 13],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid104": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [7, 14],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid105": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [7, 15],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid106": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [8, 1],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid107": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [8, 2],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid108": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [8, 3],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid109": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [8, 4],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid110": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [8, 5],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid111": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [8, 6],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid112": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [8, 7],
+    "Items": ["The Dragonslayer"],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid113": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [8, 8],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": ["Locked Door"]
+  },
+  "Grid114": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [8, 9],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid115": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [8, 10],
+    "Items": ["Singing Axe"],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid116": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [8, 11],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid117": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [8, 12],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid118": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [8, 13],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid119": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [8, 14],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid120": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [8, 15],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid121": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [9, 1],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid122": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [9, 2],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid123": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [9, 3],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid124": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [9, 4],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid125": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [9, 5],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid126": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [9, 6],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid127": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [9, 7],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid128": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [9, 8],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid129": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [9, 9],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid130": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [9, 10],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid131": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [9, 11],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid132": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [9, 12],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid133": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [9, 13],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid134": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [9, 14],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid135": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [9, 15],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid136": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [10, 1],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid137": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [10, 2],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid138": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [10, 3],
+    "Items": ["9 golden coins"],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid139": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [10, 4],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid140": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [10, 5],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid141": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [10, 6],
+    "Items": ["Longsword", "Chainmail"],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid142": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [10, 7],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid143": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [10, 8],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid144": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [10, 9],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid145": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [10, 10],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid146": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [10, 11],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid147": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [10, 12],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid148": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [10, 13],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid149": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [10, 14],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid150": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [10, 15],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid151": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [11, 1],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid152": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [11, 2],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid153": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [11, 3],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid154": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [11, 4],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid155": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [11, 5],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid156": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [11, 6],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid157": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [11, 7],
+    "Items": ["A piece of silver"],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid158": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [11, 8],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid159": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [11, 9],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid160": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [11, 10],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid161": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [11, 11],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid162": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [11, 12],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid163": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [11, 13],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid164": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [11, 14],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid165": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [11, 15],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid166": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [12, 1],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid167": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [12, 2],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid168": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [12, 3],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid169": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [12, 4],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid170": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [12, 5],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid171": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [12, 6],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid172": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [12, 7],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid173": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [12, 8],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid174": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [12, 9],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": ["River King"]
+  },
+  "Grid175": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [12, 10],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid176": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [12, 11],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid177": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [12, 12],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid178": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [12, 13],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid179": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [12, 14],
+    "Items": ["Glasses"],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid180": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [12, 15],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid181": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [13, 1],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid182": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [13, 2],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid183": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [13, 3],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid184": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [13, 4],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid185": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [13, 5],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid186": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [13, 6],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid187": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [13, 7],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid188": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [13, 8],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid189": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [13, 9],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid190": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [13, 10],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid191": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [13, 11],
+    "Items": ["Grimoire of an Aging Occultist"],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid192": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [13, 12],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid193": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [13, 13],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid194": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [13, 14],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid195": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [13, 15],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid196": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [14, 1],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid197": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [14, 2],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid198": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [14, 3],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": ["Elder Beast"]
+  },
+  "Grid199": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [14, 4],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid200": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [14, 5],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid201": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [14, 6],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid202": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [14, 7],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid203": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [14, 8],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid204": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [14, 9],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid205": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [14, 10],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid206": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [14, 11],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid207": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [14, 12],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid208": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [14, 13],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid209": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [14, 14],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid210": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [14, 15],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid211": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [15, 1],
+    "Items": ["Engraved Key"],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid212": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [15, 2],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid213": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [15, 3],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid214": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [15, 4],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid215": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [15, 5],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid216": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [15, 6],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid217": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [15, 7],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid218": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [15, 8],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid219": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [15, 9],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid220": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [15, 10],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid221": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [15, 11],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid222": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [15, 12],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid223": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [15, 13],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid224": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [15, 14],
+    "Items": [""],
+    "IsPassable": false,
+    "Entities": [""]
+  },
+  "Grid225": {
+    "Weather": "SnowStorm",
+    "Type": "Mountain",
+    "Coordinates": [15, 15],
+    "Items": ["Cornerstone"],
+    "IsPassable": false,
+    "Entities": [""]
+  }
+}

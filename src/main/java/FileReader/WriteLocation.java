@@ -35,14 +35,17 @@ public class WriteLocation {
         try {
             FileWriter fileWriter = new FileWriter(filePath);
             fileWriter.write("{");
+            int gridNumber = 0;
             for (int x = 1; x <= 15; x++) {
                 for (int y = 1; y <= 15; y++) {
                     JSONObject toWrite = new JSONObject();
                     JSONArray items = new JSONArray();
                     JSONArray entities = new JSONArray();
 
-                    int gridNumber = x * y;
-                    fileWriter.write("\"Square" + gridNumber + "\"");
+                    gridNumber++;
+
+                    String constructor = "\"Grid" + gridNumber + "\":";
+
                     toWrite.put("Type", "Mountain");
                     if (x == 3 & y == 13) {
                         toWrite.put("Type", "Doorway");
@@ -77,9 +80,9 @@ public class WriteLocation {
                     } else if (x == 8 && y == 7) {
                         items.put("The Dragonslayer");
                     } else if (x == 11 && y == 7) {
-                        items.put("A piece of silver");
+                        items.put("A Piece of Silver");
                     } else if (x == 6 && y == 9) {
-                        items.put("10 silver coins");
+                        items.put("10 Silver Coins");
                     } else if (x == 8 && y == 10) {
                         items.put("Singing Axe");
                     } else if (x == 13 && y == 11) {
@@ -107,7 +110,10 @@ public class WriteLocation {
                     }
                     toWrite.put("Entities", entities);
 
-                    fileWriter.write(toWrite.toString());
+                    constructor += toWrite.toString();
+                    constructor += ",";
+
+                    fileWriter.write(constructor);
                     System.out.println("Grid (" + x + " , " + y + ") has been registered");
                 }
             }
@@ -118,7 +124,7 @@ public class WriteLocation {
         }
     }
 
-    public static int[] arrayLoop(int[][] gridArray, int x, int y) {
+    private static int[] arrayLoop(int[][] gridArray, int x, int y) {
         for (int[] grid : gridArray) {
             if (grid[0] == x && grid[1] == y) {
                 return grid;
