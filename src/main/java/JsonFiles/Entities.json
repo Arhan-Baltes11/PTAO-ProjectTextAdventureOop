@@ -10,5 +10,17 @@
     "Health": 25,
     "AttackMin": 5,
     "AttackMax": 10
+  },
+  "EntityThree": {
+    "Name": "River King",
+    "Health": 35,
+    "AttackMin": 7,
+    "AttackMax": 15
+  },
+  "EntityFour": {
+    "Name": "Locked Door",
+    "Health": 10,
+    "AttackMin": 1,
+    "AttackMax": 2
   }
 }
