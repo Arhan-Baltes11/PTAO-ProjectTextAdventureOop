@@ -21,15 +21,18 @@ import java.util.Iterator;
 public class GameLoad {
     public static void StartGame() {
         try {
+            GameData dataGame = new GameData();
             Scanner comm = new Scanner(System.in);
             String pathCanon = new File(".").getCanonicalPath();
             String readLocations = ReadJsonDoc.readObject(pathCanon + "/src/main/java/JsonFiles/Locations.json");
             String locationHeader = pathCanon + "/src/main/java/JsonFiles/Locations.json";
             CommandParser parse = new CommandParser();
+            Player player = new Player();
 
             System.out.println("Write Next Command");
             String issuedCommand = comm.nextLine();
             parse.commandRead(issuedCommand);
+            parse.commandResolve(player);
 
         } catch (Exception e) {
             e.printStackTrace();

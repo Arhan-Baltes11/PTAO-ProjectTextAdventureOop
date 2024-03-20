@@ -11,6 +11,9 @@ public class CommandParser {
         }
     }
 
+    public void commandResolve(Object action) {
+        System.out.println(action.getClass().getCanonicalName());
+    }
     private String go() {
         return null;
     }
