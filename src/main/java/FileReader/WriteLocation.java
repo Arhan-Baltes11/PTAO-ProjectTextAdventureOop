@@ -46,25 +46,31 @@ public class WriteLocation {
 
                     String constructor = "\"Grid" + gridNumber + "\":";
 
-                    toWrite.put("Type", "Mountain");
-                    if (x == 3 & y == 13) {
-                        toWrite.put("Type", "Doorway");
+                    if (passableChecker(plains, x, y) == true) {
+                        toWrite.put("Type", "Plains");
+                        toWrite.put("IsPassable", true);
+                    } else if (passableChecker(hills, x, y) == true) {
+                        toWrite.put("Type", "Hills");
+                        toWrite.put("IsPassable", true);
+                    } else if (passableChecker(roomFloors, x, y) == true) {
+                        toWrite.put("Type", "RoomFloor");
+                        toWrite.put("IsPassable", true);
+                    } else if (impassableChecker(walls, x, y) == true) {
+                        toWrite.put("Type", "Wall");
+                        toWrite.put("IsPassable", false);
+                    } else if (passableChecker(caverns, x, y) == true) {
+                        toWrite.put("Type", "Cavern");
+                        toWrite.put("IsPassable", true);
+                    } else if (passableChecker(rivers, x, y) == true) {
+                        toWrite.put("Type", "River");
+                        toWrite.put("IsPassable", true);
+                    } else {
+                        toWrite.put("Type", "Mountain");
+                        toWrite.put("IsPassable", false);
                     }
 
-                    toWrite.put("Weather", "SnowStorm");
-                    toWrite.put("IsPassable", false);
-
-                    toWrite.put("Coordinates", arrayLoop(plains, x, y));
-                    toWrite.put("Coordinates", arrayLoop(hills, x, y));
-                    toWrite.put("Coordinates", arrayLoop(walls, x, y));
-                    toWrite.put("Coordinates", arrayLoop(roomFloors, x, y));
-                    toWrite.put("Coordinates", arrayLoop(caverns, x, y));
-                    toWrite.put("Coordinates", arrayLoop(rivers, x, y));
-
-                    if (!toWrite.has("Coordinates")) {
                         int[] addedCoordinates = { x, y };
                         toWrite.put("Coordinates", addedCoordinates);
-                    }
 
                     if (x == 15 && y == 1) {
                         items.put("Engraved Key");
@@ -120,16 +126,26 @@ public class WriteLocation {
             fileWriter.write("}");
             fileWriter.close();
         } catch (Exception e) {
+            System.out.println(e.getMessage());
             e.getStackTrace();
         }
     }
 
-    private static int[] arrayLoop(int[][] gridArray, int x, int y) {
+    private static Boolean passableChecker(int[][] gridArray, int x, int y) {
         for (int[] grid : gridArray) {
             if (grid[0] == x && grid[1] == y) {
-                return grid;
+                return true;
             }
         }
-        return null;
+        return false;
+    }
+
+    private static Boolean impassableChecker(int[][] gridArray, int x, int y) {
+        for (int[] grid : gridArray) {
+            if (grid[0] == x && grid[1] == y) {
+                return false;
+            }
+        }
+        return false;
     }
 }

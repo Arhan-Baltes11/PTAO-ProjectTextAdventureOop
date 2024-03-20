@@ -7,7 +7,6 @@ import java.util.ArrayList;
 
 public class Location {
     public String Type;
-    public String Weather;
     public Boolean IsPassable;
 
     public ArrayList<Integer> Coordinates = new ArrayList<Integer>();
@@ -16,13 +15,11 @@ public class Location {
 
     public Location(
             String locType,
-            String locWeather,
             int xAx,
             int yAx,
             Boolean passability,
             Item[] items, Entity[] entities) {
         Type = locType;
-        Weather = locWeather;
         Coordinates.add(xAx, yAx);
         IsPassable = passability;
         for (Item item : items) {

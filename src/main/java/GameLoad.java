@@ -22,7 +22,9 @@ public class GameLoad {
             Scanner comm = new Scanner(System.in);
             String pathCanon = new File(".").getCanonicalPath();
             String readLocations = ReadJsonDoc.readObject(pathCanon + "/src/main/java/JsonFiles/Locations.json");
-            JSONObject objectFile = new JSONObject(readLocations);
+            String locationHeader = pathCanon + "/src/main/java/JsonFiles/Locations.json";
+            // JSONObject objectFile = new JSONObject(readLocations);
+            WriteLocation.jsonLocationGrid(locationHeader);
 
         } catch (Exception e) {
             e.printStackTrace();
