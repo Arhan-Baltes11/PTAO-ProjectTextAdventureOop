@@ -10,6 +10,7 @@ Git repository started on: 11th of March 2024.
 
 ### V 0.0.4 - Cartographer
  - Made a method to write the Locations.json file
+ - Removed Weather from Location class due to redundancy
 
 ### V 0.0.3 - Butler
  - Added org/json to allow Json files to be read.

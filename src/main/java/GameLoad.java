@@ -24,7 +24,7 @@ public class GameLoad {
             String readLocations = ReadJsonDoc.readObject(pathCanon + "/src/main/java/JsonFiles/Locations.json");
             String locationHeader = pathCanon + "/src/main/java/JsonFiles/Locations.json";
             // JSONObject objectFile = new JSONObject(readLocations);
-            WriteLocation.jsonLocationGrid(locationHeader);
+            // WriteLocation.jsonLocationGrid(locationHeader);
 
         } catch (Exception e) {
             e.printStackTrace();
