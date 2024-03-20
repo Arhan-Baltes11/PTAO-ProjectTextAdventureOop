@@ -4,9 +4,11 @@ import src.main.java.Entities.Hostile.Enemies.Enemy;
 import src.main.java.PlayingCharacter.Player;
 import src.main.java.FileReader.ReadJsonDoc;
 import src.main.java.FileReader.WriteLocation;
+import src.main.java.CommandReader.CommandParser;
 import src.main.java.WorldMap.Location;
 import src.org.json.JSONArray;
 import src.org.json.JSONObject;
+
 
 import java.io.File;
 import java.nio.file.Paths;
@@ -23,8 +25,11 @@ public class GameLoad {
             String pathCanon = new File(".").getCanonicalPath();
             String readLocations = ReadJsonDoc.readObject(pathCanon + "/src/main/java/JsonFiles/Locations.json");
             String locationHeader = pathCanon + "/src/main/java/JsonFiles/Locations.json";
-            // JSONObject objectFile = new JSONObject(readLocations);
-            // WriteLocation.jsonLocationGrid(locationHeader);
+            CommandParser parse = new CommandParser();
+
+            System.out.println("Write Next Command");
+            String issuedCommand = comm.nextLine();
+            parse.commandRead(issuedCommand);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -44,5 +49,8 @@ public class GameLoad {
         // }
         // System.out.println("What's your next move?");
         // String nextComm = comm.nextLine();
+
+        // JSONObject objectFile = new JSONObject(readLocations);
+        // WriteLocation.jsonLocationGrid(locationHeader);
     }
 }

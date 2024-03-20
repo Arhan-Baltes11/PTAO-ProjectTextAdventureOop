@@ -5,9 +5,7 @@ import java.io.FileWriter;
 import src.org.json.JSONArray;
 import src.org.json.JSONObject;
 
-public class WriteLocation { // Little known fact, this cannot be run with the JAVAC compiler.
-                             // It somehow deletes all text on Locations.json
-                             // Please use the debug tool instead.
+public class WriteLocation {
     public static void jsonLocationGrid(String filePath) {
         int[][] plains = { { 1, 9 }, { 1, 10 }, { 1, 11 }, { 1, 12 }, { 1, 13 }, { 2, 13 }, { 3, 2 }, { 3, 3 },
                 { 3, 4 }, { 3, 7 }, { 3, 12 }, { 3, 13 }, { 3, 14 }, { 4, 6 }, { 4, 7 }, { 4, 13 }, { 4, 14 },
