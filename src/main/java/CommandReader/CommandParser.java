@@ -1,21 +1,40 @@
 package src.main.java.CommandReader;
 
+import src.main.java.GameData;
+
 public class CommandParser {
-    public void commandRead(String command) {
+
+    public void commandGet(String command, GameData dataBase) {
         String[] parsedInfo = command.split(" ");
-        System.out.println(parsedInfo);
-        if (parsedInfo[0] == "Go") {
-            go();
-        } else if (parsedInfo[0] == "Attack") {
-            attackEnemy();
+        if (parsedInfo[0].substring(0, 1).toUpperCase() + parsedInfo[0].substring(1) == "Go") {
+            go(parsedInfo[1].toLowerCase(), dataBase);
         }
+        dataBase.CurrentLocation.set(0, dataBase.CurrentLocation.get(0) + 1);
     }
 
     public void commandResolve(Object action) {
         System.out.println(action.getClass().getCanonicalName());
     }
-    private String go() {
-        return null;
+
+    private void go(String direction, GameData dataBase) {
+        switch (direction) {
+            case "north":
+                dataBase.CurrentLocation.set(1, dataBase.CurrentLocation.get(1) - 1);
+                break;
+
+            case "south":
+                dataBase.CurrentLocation.set(1, dataBase.CurrentLocation.get(1) + 1);
+                break;
+            case "west":
+                dataBase.CurrentLocation.set(0, dataBase.CurrentLocation.get(0) - 1);
+                break;
+            case "east":
+                dataBase.CurrentLocation.set(0, dataBase.CurrentLocation.get(0) + 1);
+                break;
+            default:
+                System.out.println("Invalid Direction");
+                break;
+        }
     }
 
     private void attackEnemy() {

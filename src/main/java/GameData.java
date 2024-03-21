@@ -15,5 +15,8 @@ public class GameData {
     public ArrayList<Integer> CurrentLocation = new ArrayList<>();
 
     public void dataInitiate() {
+        Player = new Player();
+        CurrentLocation.add(1);
+        CurrentLocation.add(9);
     }
 }

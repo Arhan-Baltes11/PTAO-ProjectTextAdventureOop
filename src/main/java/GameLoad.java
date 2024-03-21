@@ -22,6 +22,7 @@ public class GameLoad {
     public static void StartGame() {
         try {
             GameData dataGame = new GameData();
+            dataGame.dataInitiate();
             Scanner comm = new Scanner(System.in);
             String pathCanon = new File(".").getCanonicalPath();
             String readLocations = ReadJsonDoc.readObject(pathCanon + "/src/main/java/JsonFiles/Locations.json");
@@ -29,10 +30,10 @@ public class GameLoad {
             CommandParser parse = new CommandParser();
             Player player = new Player();
 
+            parse.commandGet("", dataGame);
+            System.out.println(dataGame.CurrentLocation.get(0));
             System.out.println("Write Next Command");
-            String issuedCommand = comm.nextLine();
-            parse.commandRead(issuedCommand);
-            parse.commandResolve(player);
+            // String issuedCommand = comm.nextLine();
 
         } catch (Exception e) {
             e.printStackTrace();
