@@ -6,7 +6,7 @@ public class CommandParser {
 
     public void commandGet(String command, GameData dataBase) {
         String[] parsedInfo = command.split(" ");
-        if (parsedInfo[0].substring(0, 1).toUpperCase() + parsedInfo[0].substring(1) == "Go") {
+        if (parsedInfo[0].toLowerCase() == "go") {
             go(parsedInfo[1].toLowerCase(), dataBase);
         }
         dataBase.CurrentLocation.set(0, dataBase.CurrentLocation.get(0) + 1);
@@ -21,7 +21,6 @@ public class CommandParser {
             case "north":
                 dataBase.CurrentLocation.set(1, dataBase.CurrentLocation.get(1) - 1);
                 break;
-
             case "south":
                 dataBase.CurrentLocation.set(1, dataBase.CurrentLocation.get(1) + 1);
                 break;

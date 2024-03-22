@@ -30,11 +30,12 @@ public class GameLoad {
             CommandParser parse = new CommandParser();
             Player player = new Player();
 
-            parse.commandGet("", dataGame);
-            System.out.println(dataGame.CurrentLocation.get(0));
-            System.out.println("Write Next Command");
-            // String issuedCommand = comm.nextLine();
-
+            while (true) {
+                System.out.println("Write Next Command");
+                String issuedCommand = comm.nextLine();
+                parse.commandGet(issuedCommand, dataGame);
+                System.out.println(dataGame.CurrentLocation.get(0));
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
