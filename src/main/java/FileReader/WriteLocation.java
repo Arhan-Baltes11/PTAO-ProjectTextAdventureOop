@@ -41,24 +41,24 @@ public class WriteLocation {
                     JSONArray items = new JSONArray();
                     JSONArray entities = new JSONArray();
 
-                    String constructor = "\"Grid" + x + y + "\":";
+                    String constructor = "\"Grid(" + x + "," + y + ")\":";
 
-                    if (passableChecker(plains, x, y) == true) {
+                    if (tableChecker(plains, x, y) == true) {
                         toWrite.put("Type", "Plains");
                         toWrite.put("IsPassable", true);
-                    } else if (passableChecker(hills, x, y) == true) {
+                    } else if (tableChecker(hills, x, y) == true) {
                         toWrite.put("Type", "Hills");
                         toWrite.put("IsPassable", true);
-                    } else if (passableChecker(roomFloors, x, y) == true) {
+                    } else if (tableChecker(roomFloors, x, y) == true) {
                         toWrite.put("Type", "RoomFloor");
                         toWrite.put("IsPassable", true);
-                    } else if (impassableChecker(walls, x, y) == true) {
+                    } else if (tableChecker(walls, x, y) == true) {
                         toWrite.put("Type", "Wall");
                         toWrite.put("IsPassable", false);
-                    } else if (passableChecker(caverns, x, y) == true) {
+                    } else if (tableChecker(caverns, x, y) == true) {
                         toWrite.put("Type", "Cavern");
                         toWrite.put("IsPassable", true);
-                    } else if (passableChecker(rivers, x, y) == true) {
+                    } else if (tableChecker(rivers, x, y) == true) {
                         toWrite.put("Type", "River");
                         toWrite.put("IsPassable", true);
                     } else {
@@ -114,7 +114,9 @@ public class WriteLocation {
                     toWrite.put("Entities", entities);
 
                     constructor += toWrite.toString();
-                    constructor += ",";
+                    if ((x * y == 225) == false) {
+                        constructor += ",";
+                    }
 
                     fileWriter.write(constructor);
                     System.out.println("Grid (" + x + " , " + y + ") has been registered");
@@ -128,19 +130,10 @@ public class WriteLocation {
         }
     }
 
-    private static Boolean passableChecker(int[][] gridArray, int x, int y) {
+    private static Boolean tableChecker(int[][] gridArray, int x, int y) {
         for (int[] grid : gridArray) {
             if (grid[0] == x && grid[1] == y) {
                 return true;
-            }
-        }
-        return false;
-    }
-
-    private static Boolean impassableChecker(int[][] gridArray, int x, int y) {
-        for (int[] grid : gridArray) {
-            if (grid[0] == x && grid[1] == y) {
-                return false;
             }
         }
         return false;

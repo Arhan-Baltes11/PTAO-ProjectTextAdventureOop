@@ -21,10 +21,6 @@ import java.util.Iterator;
 public class GameLoad {
     public static void StartGame() {
         try {
-
-            String pathCanon = new File(".").getCanonicalPath();
-            String locationHeader = pathCanon + "/src/main/java/JsonFiles/Locations.json";
-            WriteLocation.jsonLocationGrid(locationHeader);
             GameData dataGame = new GameData();
             dataGame.dataInitiate();
             Scanner comm = new Scanner(System.in);

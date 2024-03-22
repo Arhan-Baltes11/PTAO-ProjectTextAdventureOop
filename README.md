@@ -8,6 +8,12 @@ Git repository started on: 11th of March 2024.
 
 ## Changelog
 
+### V 0.0.5 - Wanderer
+ - Gave the player the ability to move
+ - Created GameData to hold any necessary in-game information (A bit like an interchangeable hub)
+ - Added collision to grids
+ - Fixed a bug where all walls are classified as mountains
+
 ### V 0.0.4 - Cartographer
  - Made a method to write the Locations.json file
  - Removed Weather from Location class due to redundancy
