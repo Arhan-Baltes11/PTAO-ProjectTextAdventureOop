@@ -35,16 +35,13 @@ public class WriteLocation {
         try {
             FileWriter fileWriter = new FileWriter(filePath);
             fileWriter.write("{");
-            int gridNumber = 0;
             for (int x = 1; x <= 15; x++) {
                 for (int y = 1; y <= 15; y++) {
                     JSONObject toWrite = new JSONObject();
                     JSONArray items = new JSONArray();
                     JSONArray entities = new JSONArray();
 
-                    gridNumber++;
-
-                    String constructor = "\"Grid" + gridNumber + "\":";
+                    String constructor = "\"Grid" + x + y + "\":";
 
                     if (passableChecker(plains, x, y) == true) {
                         toWrite.put("Type", "Plains");

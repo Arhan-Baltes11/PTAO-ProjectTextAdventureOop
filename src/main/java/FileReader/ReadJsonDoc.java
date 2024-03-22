@@ -48,6 +48,7 @@ public class ReadJsonDoc {
             return locationsList;
 
         } catch (Exception e) {
+            System.out.println(e.getMessage());
             e.getStackTrace();
         }
         return null;

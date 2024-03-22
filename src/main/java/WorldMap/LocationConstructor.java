@@ -16,27 +16,49 @@ public class LocationConstructor {
             ArrayList<JSONObject> items,
             ArrayList<JSONObject> entities) {
 
-        ArrayList<Location> locationList = new ArrayList<>();
+        try {
+
+            ArrayList<Location> locationList = new ArrayList<>();
 
         for (JSONObject location : locations) {
 
             String type = location.get("Type").toString();
             JSONArray coordinates = location.getJSONArray("Coordinates");
+            ArrayList<Integer> coords = new ArrayList<>();
+
+            for (Object number : coordinates) {
+                coords.add((int) number);
+            }
+
             Boolean isPassable = (Boolean) location.get("IsPassable");
             JSONArray itemsAtLocation = location.getJSONArray("Items");
             JSONArray entitiesAtLocation = location.getJSONArray("Entities");
 
-            Location locationInsert = new Location(type, (int) coordinates.get(0), (int) coordinates.get(1), isPassable,
-                    itemLister(items, itemsAtLocation),
-                    entityLister(entities, entitiesAtLocation));
+            ArrayList<Item> locationItems = itemLister(items, itemsAtLocation);
+            ArrayList<Entity> locationEntities = entityLister(entities, entitiesAtLocation);
+
+            Location locationInsert = new Location(type, coords, isPassable,
+                    locationItems, locationEntities);
+
             locationList.add(locationInsert);
         }
         return locationList;
 
+    } catch (Exception e) {
+        System.out.println(e.getStackTrace());
+        System.out.println(e.getLocalizedMessage());
+        return null;
+    }
     }
 
     private static ArrayList<Item> itemLister(ArrayList<JSONObject> itemsObject, JSONArray itemsArray) {
+
         ArrayList<Item> itemsList = new ArrayList<>();
+
+        if (itemsArray.get(0) == "") {
+            return new ArrayList<Item>();
+        }
+
         for (JSONObject item : itemsObject) {
             for (Object itemName : itemsArray) {
                 if (itemName.toString().equals(item.get("Name"))) {
@@ -61,6 +83,10 @@ public class LocationConstructor {
     private static ArrayList<Entity> entityLister(ArrayList<JSONObject> entitiesObject, JSONArray entitiesArray) {
 
         ArrayList<Entity> entityArrayList = new ArrayList<>();
+
+        if (entitiesArray.get(0) == "") {
+            return new ArrayList<Entity>();
+        }
 
         for (JSONObject entity : entitiesObject) {
             for (Object entityName : entitiesArray) {

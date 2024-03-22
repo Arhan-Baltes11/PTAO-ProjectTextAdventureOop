@@ -15,12 +15,11 @@ public class Location {
 
     public Location(
             String locType,
-            int xAx,
-            int yAx,
+            ArrayList<Integer> coords,
             Boolean passability,
             ArrayList<Item> items, ArrayList<Entity> entities) {
         Type = locType;
-        Coordinates.add(xAx, yAx);
+        Coordinates = coords;
         IsPassable = passability;
         Items = items;
         Entities = entities;
