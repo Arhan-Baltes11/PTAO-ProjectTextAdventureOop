@@ -18,24 +18,11 @@ public class Location {
             int xAx,
             int yAx,
             Boolean passability,
-            Item[] items, Entity[] entities) {
+            ArrayList<Item> items, ArrayList<Entity> entities) {
         Type = locType;
         Coordinates.add(xAx, yAx);
         IsPassable = passability;
-        for (Item item : items) {
-            if (item.Name == "") {
-                break;
-            } else {
-                Items.add(item);
-            }
-        }
-
-        for (Entity being : entities) {
-            if (being.Name == "") {
-                break;
-            } else {
-                Entities.add(being);
-            }
-        }
+        Items = items;
+        Entities = entities;
     }
 }

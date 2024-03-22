@@ -1,4 +1,4 @@
-package src.main.java.Entities.Hostile.Enemies;
+package src.main.java.Entities.Hostile;
 
 import src.main.java.Entities.Entity;
 

@@ -16,7 +16,7 @@ public class GameData {
 
     public void dataInitiate() {
         Player = new Player();
-        CurrentLocation.add(1);
-        CurrentLocation.add(9);
+        CurrentLocation.add(8);
+        CurrentLocation.add(5);
     }
 }

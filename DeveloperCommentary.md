@@ -23,3 +23,9 @@ So, instead, I decided to make a bunch of coordinates first based on the terrain
 With all those loops and constantly looping through large arrays, you'd expect performance to drop by a lot. It didn't, surprisingly, and I haven't tried to optimize it ever since.
 
 As for `Locations.json`, I estimated that the amount of characters is around 30000 characters, with 1508 lines of code. When you have to meticulously check each object 
+
+## Coordinates
+
+So, when you're actually going to look at coordinates structure, you'd think that going north will increase the value of the Y axis. Well... no, not in this case. The problem was with how I originally drew the map, with the y axis going up to down, so up would mean a lower value, and down would be a lower value. When I realized that, it was too late to make a change for the project, as I was already starved for time.
+
+Still, somewhere in the future (This was written in 22/03/2024, this bullet point may be removed when the coordinates are changed), I think I can relook and painstakingly change the way the coordinates are written in `WriteLocation.java`.
