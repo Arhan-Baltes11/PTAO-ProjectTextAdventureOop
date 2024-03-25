@@ -6,54 +6,48 @@ import src.main.java.GameData;
 import src.main.java.WorldMap.Location;
 
 public class GoCommand {
-    protected static void go(String direction, GameData dataBase) {
+    protected static void go(GameData dataBase, String direction) {
 
         ArrayList<Integer> travelCoordinates = new ArrayList<>();
 
         switch (direction) {
             case "north":
-                if (locationLimiter(-1, dataBase.CurrentLocation.get(1))) {
-                    travelCoordinates.add(dataBase.CurrentLocation.get(0));
-                    travelCoordinates.add(dataBase.CurrentLocation.get(1) - 1);
-                    if (passThrough(dataBase.WorldLocation, travelCoordinates)) {
-                        dataBase.CurrentLocation.set(1, dataBase.CurrentLocation.get(1) - 1);
-                    }
-                }
+                interChanger(dataBase, false, true, travelCoordinates);
                 break;
             case "south":
-                if (locationLimiter(1, dataBase.CurrentLocation.get(1))) {
-                    travelCoordinates.add(dataBase.CurrentLocation.get(0));
-                    travelCoordinates.add(dataBase.CurrentLocation.get(1) + 1);
-                    if (passThrough(dataBase.WorldLocation, travelCoordinates)) {
-                        dataBase.CurrentLocation.set(1, dataBase.CurrentLocation.get(1) + 1);
-                    }
-                }
+                interChanger(dataBase, false, false, travelCoordinates);
                 break;
             case "west":
-                if (locationLimiter(-1, dataBase.CurrentLocation.get(0))) {
-                    if (locationLimiter(1, dataBase.CurrentLocation.get(1))) {
-                        travelCoordinates.add(dataBase.CurrentLocation.get(0) - 1);
-                        travelCoordinates.add(dataBase.CurrentLocation.get(1));
-                        if (passThrough(dataBase.WorldLocation, travelCoordinates)) {
-                            dataBase.CurrentLocation.set(0, dataBase.CurrentLocation.get(0) - 1);
-                        }
-                    }
-                }
+                interChanger(dataBase, true, true, travelCoordinates);
                 break;
             case "east":
-                if (locationLimiter(1, dataBase.CurrentLocation.get(0))) {
-                    if (locationLimiter(1, dataBase.CurrentLocation.get(1))) {
-                        travelCoordinates.add(dataBase.CurrentLocation.get(0) + 1);
-                        travelCoordinates.add(dataBase.CurrentLocation.get(1));
-                        if (passThrough(dataBase.WorldLocation, travelCoordinates)) {
-                            dataBase.CurrentLocation.set(0, dataBase.CurrentLocation.get(0) + 1);
-                        }
-                    }
-                }
+                interChanger(dataBase, true, false, travelCoordinates);
                 break;
             default:
                 System.out.println("Invalid Direction");
                 break;
+        }
+    }
+
+    private static void interChanger(GameData dataInner, boolean isHorizontal, boolean isNegative,
+            ArrayList<Integer> travelCoordinates) {
+        int selectedIndex = isHorizontal ? 0 : 1;
+        int numberChange = isNegative ? -1 : 1;
+        if (locationLimiter(numberChange, dataInner.CurrentLocation.get(selectedIndex))) {
+            if (isHorizontal) {
+                travelCoordinates.add(dataInner.CurrentLocation.get(0) + numberChange);
+                travelCoordinates.add(dataInner.CurrentLocation.get(1));
+            } else {
+                travelCoordinates.add(dataInner.CurrentLocation.get(0));
+                travelCoordinates.add(dataInner.CurrentLocation.get(1) + numberChange);
+            }
+            if (passThrough(dataInner.WorldLocation, travelCoordinates)) {
+                if (isHorizontal) {
+                    dataInner.CurrentLocation.set(0, dataInner.CurrentLocation.get(0) + numberChange);
+                } else {
+                    dataInner.CurrentLocation.set(1, dataInner.CurrentLocation.get(1) + numberChange);
+                }
+            }
         }
     }
 

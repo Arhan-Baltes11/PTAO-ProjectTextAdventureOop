@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import src.main.java.Entities.Entity;
 import src.main.java.ItemsAndEquipment.*;
+import src.main.java.ItemsAndEquipment.UsableItems.HealingPotion;
 
 public class Player {
 
@@ -22,7 +23,8 @@ public class Player {
     public Player() {
         Inventory.add(new Weapon("Shortsword", 1, 6, "A shortsword made of simple metal."));
         Inventory.add(new Armor("Common Clohing", 1, "Clothing worn by commoners. Better than nothing."));
-        Inventory.add(new Item("Potion of Minor Healing", "A Potion that cures 5health from the player."));
+        Inventory.add(new HealingPotion("Healing Potion", "A Potion that cures 10 health from the player.", 10));
+        Inventory.add(new Weapon("Tall Sword", 2, 8, "Named after Henrikus Tall."));
         for (Item equips : Inventory) {
             if (equips instanceof Equipment) {
                 Equipment toEquip = (Equipment) equips;

@@ -20,7 +20,7 @@
   "item4": {
     "Type": "Item",
     "Name": "Kraken's Tongue",
-    "Description": "Not exactly the tongue of the kraken, but something close to it. It's enchanted to protect a user from a curse that instantly kills a person."
+    "Description": "Not exactly the tongue of the kraken, but something close to it. It's said that this could banish a great beast."
   },
   "item5": {
     "Type": "Item",
@@ -30,7 +30,7 @@
   "item6": {
     "Type": "Item",
     "Name": "A Piece of Silver",
-    "Description": "An enchanted piece of silver that is capable of blinding anyone that it comes into contact with, if thrown."
+    "Description": "An enchanted piece of silver."
   },
   "item7": {
     "Type": "Item",
@@ -64,7 +64,7 @@
   "item12": {
     "Type": "Item",
     "Name": "Cornerstone",
-    "Description": "A stone that is said to only be found at the corner of the world."
+    "Description": "A stone that is said to only be found at the corner of the world. Although worthless, it's said that it can be used to banish a great beast."
   },
   "item13": {
     "Type": "Item",

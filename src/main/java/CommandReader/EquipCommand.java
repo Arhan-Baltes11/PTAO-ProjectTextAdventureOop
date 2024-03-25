@@ -4,15 +4,43 @@ import src.main.java.GameData;
 import src.main.java.ItemsAndEquipment.*;
 
 public class EquipCommand {
-    public void equip(GameData dataBase, String command) {
+    protected static void equip(GameData dataBase, String command) {
+        command = command.replace("equip ", "");
+        command = ".*" + command + ".*";
         for (Item item : dataBase.Player.Inventory) {
             if (item instanceof Equipment) {
-                if (item.Name.contains(command)) {
+                if (item.Name.toLowerCase().matches(command)) {
                     if (item instanceof Armor) {
                         Armor toEquip = (Armor) item;
-
+                        toEquip.IsEquipped = true;
+                        unequip(dataBase, dataBase.Player.EquippedArmor);
+                        dataBase.Player.EquippedArmor = toEquip;
+                        return;
+                    } else {
+                        Weapon toEquip = (Weapon) item;
+                        toEquip.IsEquipped = true;
+                        unequip(dataBase, dataBase.Player.EquippedWeapon);
+                        dataBase.Player.EquippedWeapon = toEquip;
+                        return;
                     }
                 }
+            }
+        }
+    }
+
+    private static void unequip(GameData dataBase, Equipment toRemove) {
+        for (Item equipment : dataBase.Player.Inventory) {
+            if (equipment.equals(toRemove)) {
+                if (equipment instanceof Armor) {
+                    Armor iteratedEquipment = (Armor) equipment;
+                    iteratedEquipment.IsEquipped = false;
+                    return;
+                } else {
+                    Weapon iteratedEquipment = (Weapon) equipment;
+                    iteratedEquipment.IsEquipped = false;
+                    return;
+                }
+
             }
         }
     }

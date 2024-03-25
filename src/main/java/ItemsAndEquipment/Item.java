@@ -1,6 +1,6 @@
 package src.main.java.ItemsAndEquipment;
 
-import java.lang.reflect.Field;
+import src.main.java.PlayingCharacter.Player;
 
 public class Item {
     public String Type;
@@ -13,16 +13,7 @@ public class Item {
         Description = iDescription;
     }
 
-    public void mentionSelf(Item item) {
-        Field[] fields = item.getClass().getFields();
-        for (Field field : fields) {
-            try {
-                field.setAccessible(true);
-                System.out.println(field.getName() + ": " + field.get(item));
-            } catch (IllegalAccessException e) {
-                e.printStackTrace();
-            }
-        }
-        System.out.println("");
+    public void useItem(Player player) {
+        System.out.println("You tried to make use of " + Name + " but you cannot figure out what it's used for.");
     }
 }
