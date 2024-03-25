@@ -6,6 +6,27 @@ A Project by Arhan Baltes to test out Object Oriented Programming with Java, by 
 This project was started on 4th of March, but official programming started on the 11th, both in the year 2024.
 Git repository started on: 11th of March 2024.
 
+## TO DO
+
+- Write the following commands:
+    - Talk ("Speak to a targeted entity")
+    - Attack ("Assault an entity and initiate combat")
+    - Pick Up (Take an item from a location, add it to inventory and remove it from the world)
+    - Drop (Remove an item from the inventory and place it into the world)
+    - Equip (Equip a new item that's either a weapon or armor)
+    - Banish (Banish a creature completely from the realm of existence. For some reason, it only works against the Elder Beast)
+    - Look (Inspects the direction you point towards, or if combined with the word "around", inspect your current location)
+    - Inventory (Checks what is currently in your inventory)
+    - Use (Use an item that's in your inventory)
+    - Save (Saves the game)
+    - ~~Pet (Gives the entity some involuntary headpats.)~~
+
+- Add comments to functions to say how they work
+
+- Create a way to allow the banishment spell
+
+- Make the merchant capable of being traded with
+
 ## Changelog
 
 ### V 0.0.5 - Wanderer

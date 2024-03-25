@@ -1,21 +1,21 @@
 {
   "EntityOne": {
     "Name": "Elder Beast",
-    "Health": 100,
+    "Health": 150,
     "AttackMin": 10,
     "AttackMax": 20
   },
   "EntityTwo": {
     "Name": "Armed Merchant",
-    "Health": 25,
-    "AttackMin": 5,
-    "AttackMax": 10
+    "Health": 22,
+    "AttackMin": 2,
+    "AttackMax": 4
   },
   "EntityThree": {
     "Name": "River King",
     "Health": 35,
-    "AttackMin": 7,
-    "AttackMax": 15
+    "AttackMin": 5,
+    "AttackMax": 7
   },
   "EntityFour": {
     "Name": "Locked Door",

@@ -33,27 +33,6 @@ public class Player {
         equipArmor((Armor) Inventory.get(1));
     }
 
-    public void attack(Entity target) {
-        int range = EquippedWeapon.DamageOutputMax + EquippedWeapon.DamageOutputMin + 1;
-        int damageOutput = (int) (Math.random() * range) + EquippedWeapon.DamageOutputMin;
-        target.Health = target.Health - damageOutput;
-        System.out.println(Name + " attacks the creature! You deal " + damageOutput + " damage!");
-    }
-
-    public void checkInventory() {
-        System.out.println("Your Inventory Contains " + Inventory.size() + " Items");
-        for (Item item : Inventory) {
-            String itemInInventory = item.Name;
-            if (item instanceof Equipment) {
-                Equipment isEquip = (Equipment) item;
-                if (isEquip.IsEquipped) {
-                    itemInInventory += "(e)";
-                }
-            }
-            System.out.println(itemInInventory);
-        }
-    }
-
     public void equipWeapon(Weapon weapon) {
         EquippedWeapon = weapon;
         System.out.println(weapon.Name + " Has been equipped.");

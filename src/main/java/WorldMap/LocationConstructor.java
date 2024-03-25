@@ -17,7 +17,6 @@ public class LocationConstructor {
             ArrayList<JSONObject> entities) {
 
         try {
-
             ArrayList<Location> locationList = new ArrayList<>();
 
         for (JSONObject location : locations) {
@@ -92,13 +91,18 @@ public class LocationConstructor {
             for (Object entityName : entitiesArray) {
                 if (entityName.toString().equals(entity.get("Name"))) {
                     if (entity.get("Name").equals("Elder Beast")) {
-                        entityArrayList.add(new ElderBeast());
+                        entityArrayList.add(new ElderBeast(entity.getString("Name"), entity.getInt("Health"),
+                                entity.getInt("AttackMin"), entity.getInt("AttackMax")));
                     } else if (entity.get("Name").equals("Armed Merchant")) {
-                        entityArrayList.add(new Merchant());
+                        entityArrayList.add(
+                                new Merchant(entity.getString("Name"), entity.getInt("Health"),
+                                        entity.getInt("AttackMin"), entity.getInt("AttackMax")));
                     } else if (entity.get("Name").equals("River King")) {
-                        entityArrayList.add(new RiverKing());
+                        entityArrayList.add(new RiverKing(entity.getString("Name"), entity.getInt("Health"),
+                                entity.getInt("AttackMin"), entity.getInt("AttackMax")));
                     } else if (entity.get("Name").equals("Locked Door")) {
-                        entityArrayList.add(new Entity());
+                        entityArrayList.add(new Entity(entity.getString("Name"), entity.getInt("Health"),
+                                entity.getInt("AttackMin"), entity.getInt("AttackMax")));
                     }
                 }
             }
