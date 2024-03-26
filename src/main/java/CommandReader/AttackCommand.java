@@ -6,10 +6,12 @@ import src.main.java.PlayingCharacter.Player;
 
 public class AttackCommand {
     protected static void attack(GameData dataBase, String entityName) {
-        for (Entity being : dataBase.EntitiesOnLocation) {
-            if (being.Name.contains(entityName)) {
-                calculateDamage(being, dataBase.Player);
-                return;
+        if (dataBase.EntitiesOnLocation != null) {
+            for (Entity being : dataBase.EntitiesOnLocation) {
+                if (being.Name.contains(entityName)) {
+                    calculateDamage(being, dataBase.Player);
+                    return;
+                }
             }
         }
         System.out.println("You swing at... thin air.");

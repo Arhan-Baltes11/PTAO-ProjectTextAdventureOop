@@ -14,8 +14,8 @@ Git repository started on: 11th of March 2024.
     - Pick Up (Take an item from a location, add it to inventory and remove it from the world) x
     - Drop (Remove an item from the inventory and place it into the world) x
     - Equip (Equip a new item that's either a weapon or armor) x
-    - Banish (Banish a creature completely from the realm of existence. For some reason, it only works against the Elder Beast)
-    - Look (Inspects the direction you point towards, or if combined with the word "around", inspect your current location)
+    - Banish (Banish a creature completely from the realm of existence. For some reason, it only works against the Elder Beast) x
+    - Look (Inspects the direction you point towards, or if combined with the word "around", inspect your current location) x
     - Inventory (Checks what is currently in your inventory) x
     - Use (Use an item that's in your inventory) x
     - Save (Saves the game) 

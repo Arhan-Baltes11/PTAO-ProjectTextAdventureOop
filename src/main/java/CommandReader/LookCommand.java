@@ -4,7 +4,6 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 
 import src.main.java.GameData;
-import src.main.java.ItemsAndEquipment.Item;
 import src.main.java.WorldMap.Location;
 
 public class LookCommand {

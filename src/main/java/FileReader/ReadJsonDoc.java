@@ -1,7 +1,6 @@
 package src.main.java.FileReader;
 
 import src.main.java.WorldMap.Location;
-import src.org.json.JSONArray;
 import src.org.json.JSONObject;
 import src.main.java.WorldMap.LocationConstructor;
 
@@ -37,9 +36,9 @@ public class ReadJsonDoc {
             JSONObject itemObject = new JSONObject(readObject(itemHeader));
             JSONObject entityObject = new JSONObject(readObject(entityHeader));
 
-            ArrayList<JSONObject> locationObjectList = fileIterator(locationObject, entityHeader);
-            ArrayList<JSONObject> itemObjectList = fileIterator(itemObject, entityHeader);
-            ArrayList<JSONObject> entityObjectList = fileIterator(entityObject, entityHeader);
+            ArrayList<JSONObject> locationObjectList = fileIterator(locationObject);
+            ArrayList<JSONObject> itemObjectList = fileIterator(itemObject);
+            ArrayList<JSONObject> entityObjectList = fileIterator(entityObject);
 
             ArrayList<Location> locationsList = LocationConstructor.locationArrayConstructor(locationObjectList,
                     itemObjectList,
@@ -54,7 +53,7 @@ public class ReadJsonDoc {
         return null;
     }
 
-    private static ArrayList<JSONObject> fileIterator(JSONObject objectToIterate, String pathToFile) {
+    public static ArrayList<JSONObject> fileIterator(JSONObject objectToIterate) {
         Iterator<String> iterationKeys = objectToIterate.keys();
         ArrayList<JSONObject> objectList = new ArrayList<>();
         while (iterationKeys.hasNext()) {
@@ -63,33 +62,6 @@ public class ReadJsonDoc {
             objectList.add(innerObject);
         }
         return objectList;
-    }
-
-    public static ArrayList<Location> locationGenerator(JSONObject jsonOrigin) {
-        ArrayList<JSONObject> objectList = new ArrayList<>();
-        ArrayList<Location> locationsHandler = new ArrayList<>();
-        Iterator<String> iterationKeys = jsonOrigin.keys();
-        while (iterationKeys.hasNext()) {
-            String keystone = iterationKeys.next();
-            JSONObject innerObject = jsonOrigin.getJSONObject(keystone);
-            objectList.add(innerObject);
-        }
-        for (JSONObject object : objectList) {
-            String type = object.get("Type").toString();
-            String weather = object.get("Weather").toString();
-            JSONArray coordinates = object.getJSONArray("Coordinates");
-            Boolean isPassable = (Boolean) object.get("IsPassable");
-            JSONArray items = object.getJSONArray("Items");
-            JSONArray entities = object.getJSONArray("Entities");
-            int xVal = coordinates.getInt(0);
-            // Location generatedLocation = new Location(type, weather,
-            // coordinates.getInt(0), coordinates.getInt(1),
-            // isPassable);
-            // Location generatedLocation = new Location(object.get("Type"),
-            // object.get("Weather"), object.get("Coordinates"), 0, null, null)
-        }
-
-        return null;
     }
 
 }

@@ -1,6 +1,5 @@
 package src.main.java.CommandReader;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 import src.main.java.GameData;
@@ -22,6 +21,9 @@ public class CommandParser {
         if (parsedInfo[0].equals("equip")) {
             EquipCommand.equip(dataBase, command);
         }
+        if (parsedInfo[0].equals("unequip")) {
+            EquipCommand.unequip(dataBase, command);
+        }
         if (parsedInfo[0].equals("drop")) {
             DropCommand.drop(dataBase, command);
         }
@@ -40,5 +42,15 @@ public class CommandParser {
         if (parsedInfo[0].equals("attack")) {
             AttackCommand.attack(dataBase, command);
         }
+        if (parsedInfo[0].equals("banish")) {
+            BanishCommand.banish(dataBase);
+        }
+        if (parsedInfo[0].equals("save")) {
+            SaveCommand.save(dataBase);
+        }
+    }
+
+    public void quitCommand(Scanner scanner) {
+        QuitCommand.quit(scanner);
     }
 }

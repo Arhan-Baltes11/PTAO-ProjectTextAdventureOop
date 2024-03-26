@@ -14,6 +14,9 @@ So, it was suggested that everyone use C# for this project, because that's what 
 
 I always wanted to write in Java, but, the reason why I even bothered with it was because a few months ago, I told a friend that one of my new year's resolutions was to learn it, then show to him everything I've learned by July. Other than that, I saw that there was many requests for people who did Java programming, and I figured I might as well add that to the belt of experiences.
 
+
+
+
 ## WriteLocation.java
 
 When you're looking around the code in the project, one class stands completely out, and that's `WriteLocation.java`. I made it **VERY** specific to fill a .json document with basically the entirety of the game's grid. I had it mapped out on a piece of paper on what should the grid looked like, the types of terrain, what is on it, etc. And, because the grid is basically a 15x15 square, that would mean I have to write "Gridx" (x is the number of the grid square) and it's contents 225 times. And frankly, I was not going to write the same thing with different modifications 224 more times. That'd be crazy! And I'd risk carpal tunnel at age 30!
@@ -29,3 +32,9 @@ As for `Locations.json`, I estimated that the amount of characters is around 300
 So, when you're actually going to look at coordinates structure, you'd think that going north will increase the value of the Y axis. Well... no, not in this case. The problem was with how I originally drew the map, with the y axis going up to down, so up would mean a lower value, and down would be a lower value. When I realized that, it was too late to make a change for the project, as I was already starved for time.
 
 Still, somewhere in the future (This was written in 22/03/2024, this bullet point may be removed when the coordinates are changed), I think I can relook and painstakingly change the way the coordinates are written in `WriteLocation.java`.
+
+## Quit Command
+
+Whenever you want to end a game, you would have to quit. So, I decided to make a quit command. This one had several complications because, as it turns out, multiple scanners can lead to diverse problems. The first one is that if you close one scanner, all scanners are basically broken because System.in would be gone for the current instance.
+
+So, to bypass that, I wrote a new command to include a Scanner as it's parameter. I had to do a workaround, which is why the commands in `GameLoad.java` looks a bit weird. I definitely wanted to keep one method in `CommandParser.java` but looks like that became an impossibility.
