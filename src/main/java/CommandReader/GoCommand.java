@@ -66,6 +66,9 @@ public class GoCommand {
             if (place.Coordinates.equals(nextLocation)) {
                 if (place.IsPassable) {
                     return true;
+                } else if (place.Coordinates.get(0) == 8 && place.Coordinates.get(1) == 7 && !place.IsPassable) {
+                    System.out.println("The door holds a stubborn lock. Only a key will let you pass it.");
+                    return false;
                 } else {
                     System.out.println("You hit a " + place.Type + " that you cannot pass through.");
                     return false;

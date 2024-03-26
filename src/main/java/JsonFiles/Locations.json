@@ -1562,7 +1562,7 @@
         "Items": [
             "The Dragonslayer"
         ],
-        "IsPassable": true,
+        "IsPassable": false,
         "Entities": [
             ""
         ]

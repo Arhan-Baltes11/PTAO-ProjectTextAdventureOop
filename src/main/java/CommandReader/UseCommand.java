@@ -9,7 +9,7 @@ public class UseCommand {
         command = ".*" + command + ".*";
         for (Item item : dataBase.Player.Inventory) {
             if (item.Name.matches(command)) {
-                item.useItem(dataBase.Player);
+                item.useItem(dataBase);
                 return;
             }
         }

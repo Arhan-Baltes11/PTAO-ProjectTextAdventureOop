@@ -1,6 +1,6 @@
 package src.main.java.ItemsAndEquipment;
 
-import src.main.java.PlayingCharacter.Player;
+import src.main.java.GameData;
 
 public class Item {
     public String Type;
@@ -13,7 +13,7 @@ public class Item {
         Description = iDescription;
     }
 
-    public void useItem(Player player) {
+    public void useItem(GameData dataBase) {
         System.out.println("You tried to make use of " + Name + " but you cannot figure out what it's used for.");
     }
 }

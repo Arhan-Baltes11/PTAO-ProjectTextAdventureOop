@@ -61,6 +61,9 @@ public class WriteLocation {
                     } else if (tableChecker(rivers, x, y) == true) {
                         toWrite.put("Type", "River");
                         toWrite.put("IsPassable", true);
+                    } else if (x == 8 && y == 7) {
+                        toWrite.put("Type", "RoomFloor");
+                        toWrite.put("IsPassable", false);
                     } else {
                         toWrite.put("Type", "Mountain");
                         toWrite.put("IsPassable", false);

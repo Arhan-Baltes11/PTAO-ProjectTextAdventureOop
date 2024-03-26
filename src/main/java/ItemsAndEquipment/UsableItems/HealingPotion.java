@@ -1,7 +1,7 @@
 package src.main.java.ItemsAndEquipment.UsableItems;
 
+import src.main.java.GameData;
 import src.main.java.ItemsAndEquipment.Item;
-import src.main.java.PlayingCharacter.Player;
 
 public class HealingPotion extends Item {
 
@@ -13,14 +13,14 @@ public class HealingPotion extends Item {
     }
 
     @Override
-    public void useItem(Player player) {
+    public void useItem(GameData dataBase) {
         System.out.println("You are healed by " + HealingAmount);
-        player.Health = player.Health + HealingAmount;
-        if (player.Health > player.MaxHealth) {
-            player.Health = player.MaxHealth;
+        dataBase.Player.Health = dataBase.Player.Health + HealingAmount;
+        if (dataBase.Player.Health > dataBase.Player.MaxHealth) {
+            dataBase.Player.Health = dataBase.Player.MaxHealth;
         }
         System.out.println("The Healing Potion is now empty.");
-        player.Inventory.remove(this);
+        dataBase.Player.Inventory.remove(this);
     }
 
 }

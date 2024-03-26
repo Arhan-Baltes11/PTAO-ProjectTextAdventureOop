@@ -11,6 +11,7 @@ public class GameLoad {
         try {
             GameData dataGame = new GameData();
             dataGame.dataInitiate();
+            SafeFileHandler.saveFileHandler(dataGame);
 
             Scanner comm = new Scanner(System.in);
             CommandParser parse = new CommandParser();

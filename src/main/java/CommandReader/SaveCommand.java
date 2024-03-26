@@ -10,7 +10,6 @@ import src.org.json.*;
 
 import src.main.java.GameData;
 import src.main.java.ItemsAndEquipment.Item;
-import src.main.java.Entities.Entity;
 import src.main.java.WorldMap.Location;
 
 public class SaveCommand {
@@ -25,24 +24,8 @@ public class SaveCommand {
 
             JSONObject baseObject = new JSONObject();
             JSONObject locationObject = new JSONObject();
+            JSONObject playerObject = new JSONObject();
             JSONObject currentLocationObject = new JSONObject();
-
-            JSONArray entitiesOnLocationObject = new JSONArray();
-            JSONArray itemsOnGroundObject = new JSONArray();
-
-            if (dataBase.ItemsOnGround != null) {
-                for (Item item : dataBase.ItemsOnGround) {
-                    JSONObject itemObject = saveJsonObject(item);
-                    entitiesOnLocationObject.put(itemObject);
-                }
-            }
-
-            if (dataBase.EntitiesOnLocation != null) {
-                for (Entity being : dataBase.EntitiesOnLocation) {
-                    JSONObject entityObject = saveJsonObject(being);
-                    entitiesOnLocationObject.put(entityObject);
-                }
-            }
 
             for (Location place : dataBase.WorldLocation) {
                 locationObject.put("Grid " + place.Coordinates.toString(), saveJsonObject(place));
@@ -57,11 +40,20 @@ public class SaveCommand {
                 currentLocationObject.put(selectedAxis + "Axis", dataBase.CurrentLocation.get(i));
             }
 
+            JSONObject playerInventoryObject = new JSONObject();
+            for (Item item : dataBase.Player.Inventory) {
+                playerInventoryObject.put(item.Name, saveJsonObject(item));
+            }
+            playerObject.put("Inventory", playerInventoryObject);
+            playerObject.put("EquippedWeapon", saveJsonObject(dataBase.Player.EquippedWeapon));
+            playerObject.put("EquippedArmor", saveJsonObject(dataBase.Player.EquippedArmor));
+            playerObject.put("Health", dataBase.Player.Health);
+            playerObject.put("MaxHealth", dataBase.Player.MaxHealth);
+            playerObject.put("Name", dataBase.Player.Name);
+
             baseObject.put("Location", locationObject);
-            baseObject.put("Player", saveJsonObject(dataBase.Player));
+            baseObject.put("Player", playerObject);
             baseObject.put("CurrentLocation", currentLocationObject);
-            baseObject.put("EntitiesOnLocation", entitiesOnLocationObject);
-            baseObject.put("ItemsOnGround", itemsOnGroundObject);
 
             FileWriter fileWriter = new FileWriter(pathToSaveFile);
             fileWriter.write(baseObject.toString());

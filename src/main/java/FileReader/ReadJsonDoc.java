@@ -8,7 +8,9 @@ import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
 
 
 public class ReadJsonDoc {
@@ -51,6 +53,17 @@ public class ReadJsonDoc {
             e.getStackTrace();
         }
         return null;
+    }
+
+    public static Map<String, JSONObject> mapIterator(JSONObject objectToIterate) {
+        Iterator<String> iterationKeys = objectToIterate.keys();
+        Map<String, JSONObject> objectMap = new HashMap();
+        while (iterationKeys.hasNext()) {
+            String keyBase = iterationKeys.next();
+            JSONObject innerObject = objectToIterate.getJSONObject(keyBase);
+            objectMap.put(keyBase, innerObject);
+        }
+        return objectMap;
     }
 
     public static ArrayList<JSONObject> fileIterator(JSONObject objectToIterate) {

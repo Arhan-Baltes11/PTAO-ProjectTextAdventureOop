@@ -48,6 +48,9 @@ public class CommandParser {
         if (parsedInfo[0].equals("save")) {
             SaveCommand.save(dataBase);
         }
+        if (parsedInfo[0].equals("load")) {
+            LoadCommand.load(dataBase);
+        }
     }
 
     public void quitCommand(Scanner scanner) {
