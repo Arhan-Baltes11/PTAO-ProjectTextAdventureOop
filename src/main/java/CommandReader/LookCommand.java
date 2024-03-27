@@ -65,7 +65,7 @@ public class LookCommand {
         System.out.println(
                 location.IsPassable ? "You can pass through this place" : "You cannot pass through this place");
         System.out.println("The following items can be found on this location:");
-        if (location.Items != null) {
+        if (location.Items.size() != 0) {
             for (Item item : location.Items) {
                 System.out.println(item.Name + ", " + item.Description);
             }
@@ -73,7 +73,7 @@ public class LookCommand {
             System.out.println("Nothing");
         }
         System.out.println("The following entities can be found on this location:");
-        if (location.Entities != null) {
+        if (location.Entities.size() != 0) {
             for (Entity being : location.Entities) {
                 System.out.println(being.Name);
             }

@@ -22,6 +22,13 @@ Git repository started on: 11th of March 2024.
 
 ## Changelog
 
+### V 0.1.1 - Narrator
+ - Overhauled most code to now be story based.
+ - Fixed several bugs related to non-functioning commands.
+ - Added a help command.
+ - You will always look around on your current location.
+    - You can still look around by command, but that will cause the command to be mentioned twice.
+
 ### V 0.1.0 - Sprout
  - First official build compiled
  - Characters can do a great variety of actions, from inspecting items to using them.

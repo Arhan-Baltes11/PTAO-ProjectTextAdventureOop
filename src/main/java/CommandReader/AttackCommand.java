@@ -13,7 +13,7 @@ public class AttackCommand {
             if (place.Coordinates.equals(dataBase.CurrentLocation)) {
                 if (place.Entities != null) {
                     for (Entity being : place.Entities) {
-                        if (being.Name.matches(command)) {
+                        if (being.Name.toLowerCase().matches(command)) {
                             calculateDamage(being, dataBase.Player);
                             if (being.Health > 0) {
                                 being.attack(dataBase.Player);

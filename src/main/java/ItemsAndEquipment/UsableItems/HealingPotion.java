@@ -9,18 +9,19 @@ public class HealingPotion extends Item {
 
     public HealingPotion(String iName, String iDescription, int healingAmount) {
         super(iName, iDescription);
+        Type = "Healing Potion";
         HealingAmount = healingAmount;
     }
 
     @Override
     public void useItem(GameData dataBase) {
-        System.out.println("You are healed by " + HealingAmount);
         dataBase.Player.Health = dataBase.Player.Health + HealingAmount;
         if (dataBase.Player.Health > dataBase.Player.MaxHealth) {
+            HealingAmount = dataBase.Player.MaxHealth - dataBase.Player.Health + 10;
             dataBase.Player.Health = dataBase.Player.MaxHealth;
         }
+        System.out.println("You are Healed by " + HealingAmount + ".");
         System.out.println("The Healing Potion is now empty.");
         dataBase.Player.Inventory.remove(this);
     }
-
 }

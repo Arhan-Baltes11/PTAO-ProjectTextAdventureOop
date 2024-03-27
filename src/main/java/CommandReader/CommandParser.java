@@ -53,7 +53,12 @@ public class CommandParser {
         }
     }
 
-    public void quitCommand(Scanner scanner) {
-        QuitCommand.quit(scanner);
+    public void scanCommand(Scanner scanner, String commString) {
+        commString = commString.toLowerCase();
+        if (commString.equals("quit")) {
+            QuitCommand.quit(scanner);
+        } else if (commString.equals("help")) {
+            HelpCommand.help(scanner);
+        }
     }
 }

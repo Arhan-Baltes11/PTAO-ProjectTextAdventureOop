@@ -17,15 +17,15 @@ public class GameLoad {
             CommandParser parse = new CommandParser();
 
             while (true) {
-                if (dataGame.Player.Health == 0) {
+                if (dataGame.Player.Health <= 0) {
+                    System.out.println("Player has died! Game over!!");
                     break;
                 }
-                System.out.println("You are on the following coordinates: " + dataGame.CurrentLocation.get(0) + ", "
-                        + dataGame.CurrentLocation.get(1));
+                parse.commandGet("look around", dataGame);
                 System.out.println("What will you do now?");
                 String issuedCommand = comm.nextLine();
-                if (issuedCommand.equals("quit")) {
-                    parse.quitCommand(comm);
+                if (issuedCommand.equals("quit") || issuedCommand.equals("help")) {
+                    parse.scanCommand(comm, issuedCommand);
                 } else {
                     parse.commandGet(issuedCommand, dataGame);
                 }

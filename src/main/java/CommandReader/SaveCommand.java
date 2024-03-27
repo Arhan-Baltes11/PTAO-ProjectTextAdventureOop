@@ -75,6 +75,7 @@ public class SaveCommand {
             FileWriter fileWriter = new FileWriter(pathToSaveFile);
             fileWriter.write(baseObject.toString());
             fileWriter.close();
+            System.out.println("Game has been saved.");
             return;
 
         } catch (Exception e) {
