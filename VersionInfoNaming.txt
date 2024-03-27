@@ -3,3 +3,4 @@ Version: 0.0.2 - Strife - A synonym for combat, as it's the earliest combat buil
 Version: 0.0.3 - Butler - Named due to organising the project with JSON files, as well as restructuring the project
 Version: 0.0.4 - Cartographer - Someone who studies and uses maps. The world map has been made in this version. 
 Version: 0.0.5 - Wanderer - Someone who wanders aimlessly. named because the world is still empty and players cannot interact with surroundings just yet.
+Version: 0.1.0 - Sprout - A shoot of a plant; first fully-functioning build.

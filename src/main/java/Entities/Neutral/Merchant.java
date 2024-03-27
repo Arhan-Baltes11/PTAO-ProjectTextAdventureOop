@@ -8,4 +8,12 @@ public class Merchant extends Entity {
         super(name, health, attackMin, attackMax);
     }
 
+    @Override
+    public void respond() {
+        System.out.println("I must apologize right now, but I'm in no mood to start trading with you.");
+        System.out.println(
+                "However, I can give you some information on where to find what's beyond that door over yonder");
+        System.out.println("");
+    }
+
 }

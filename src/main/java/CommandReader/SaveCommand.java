@@ -6,6 +6,8 @@ import java.io.File;
 import java.io.FileWriter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+
 import src.org.json.*;
 
 import src.main.java.GameData;
@@ -28,7 +30,22 @@ public class SaveCommand {
             JSONObject currentLocationObject = new JSONObject();
 
             for (Location place : dataBase.WorldLocation) {
-                locationObject.put("Grid " + place.Coordinates.toString(), saveJsonObject(place));
+                JSONObject locationConstructedObject = new JSONObject();
+                JSONObject itemObject = arrayListReader(place.Items);
+                JSONObject entityObject = arrayListReader(place.Entities);
+                JSONArray coordinatesObject = new JSONArray();
+
+                JSONArray itemArray = new JSONArray();
+                itemArray.put(itemObject);
+                coordinatesObject.put(place.Coordinates.get(0));
+                coordinatesObject.put(place.Coordinates.get(1));
+
+                locationConstructedObject.put("Items", itemArray);
+                locationConstructedObject.put("Entities", entityObject);
+                locationConstructedObject.put("Coordinates", coordinatesObject);
+                locationConstructedObject.put("IsPassable", place.IsPassable);
+                locationConstructedObject.put("Type", place.Type);
+                locationObject.put("Grid" + place.Coordinates.toString(), locationConstructedObject);
             }
             for (int i = 0; i < dataBase.CurrentLocation.size(); i++) {
                 String selectedAxis = "";
@@ -78,5 +95,25 @@ public class SaveCommand {
         }
 
         return arrayFileSave;
+    }
+
+    private static <T> JSONObject arrayListReader(ArrayList<T> arrayList) {
+        int iteration = 0;
+        JSONObject arrayListObject = new JSONObject();
+        for (T objectList : arrayList) {
+            Field[] fields = objectList.getClass().getFields();
+            JSONObject innerArrayObject = new JSONObject();
+            for (Field field : fields) {
+                try {
+                    field.setAccessible(true);
+                    innerArrayObject.put(field.getName(), field.get(objectList));
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+            iteration++;
+            arrayListObject.put("Object" + iteration, innerArrayObject);
+        }
+        return arrayListObject;
     }
 }

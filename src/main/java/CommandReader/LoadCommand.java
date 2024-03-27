@@ -93,7 +93,7 @@ public class LoadCommand {
                 JSONObject locationObject = worldLocationObject.getJSONObject(locationKey);
                 for (Location place : dataBase.WorldLocation) {
                     if (place.Coordinates.equals(locationObject.getJSONArray("Coordinates").toList())) {
-                        place.Entities.equals(locationObject.getJSONArray("Entities").toList());
+                        place.Entities.equals(locationObject.getJSONObject("Entities"));
                         place.Items.equals(locationObject.getJSONArray("Items").toList());
                         place.IsPassable.equals(locationObject.getBoolean("IsPassable"));
                     }

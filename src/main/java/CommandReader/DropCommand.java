@@ -22,6 +22,7 @@ public class DropCommand {
                 for (Location location : dataBase.WorldLocation) {
                     if (location.Coordinates.equals(dataBase.CurrentLocation)) {
                         location.Items.add(item);
+                        System.out.println("Dropped" + item.Name);
                         return;
                     }
                 }

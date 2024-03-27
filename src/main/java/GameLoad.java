@@ -20,15 +20,16 @@ public class GameLoad {
                 if (dataGame.Player.Health == 0) {
                     break;
                 }
-                System.out.println("Write Next Command");
+                System.out.println("You are on the following coordinates: " + dataGame.CurrentLocation.get(0) + ", "
+                        + dataGame.CurrentLocation.get(1));
+                System.out.println("What will you do now?");
                 String issuedCommand = comm.nextLine();
                 if (issuedCommand.equals("quit")) {
                     parse.quitCommand(comm);
                 } else {
                     parse.commandGet(issuedCommand, dataGame);
                 }
-                System.out.println(dataGame.CurrentLocation.get(0));
-                System.out.println(dataGame.CurrentLocation.get(1));
+
             }
             comm.close();
 

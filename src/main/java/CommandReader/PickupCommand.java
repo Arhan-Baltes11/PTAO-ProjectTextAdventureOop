@@ -14,6 +14,7 @@ public class PickupCommand {
                     if (item.Name.toLowerCase().matches(command)) {
                         dataBase.Player.Inventory.add(item);
                         place.Items.remove(item);
+                        System.out.println("Picked up" + item.Name);
                         return;
                     }
                 }
