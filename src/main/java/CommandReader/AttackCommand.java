@@ -5,6 +5,10 @@ import src.main.java.Entities.Entity;
 import src.main.java.PlayingCharacter.Player;
 import src.main.java.WorldMap.Location;
 
+/*
+ * When an entity is there,
+ * Attack named entity.
+ */
 public class AttackCommand {
     protected static void attack(GameData dataBase, String command) {
         command = command.replace("attack ", "");
@@ -18,6 +22,7 @@ public class AttackCommand {
                             if (being.Health > 0) {
                                 being.attack(dataBase.Player);
                             } else {
+                                // Dragonquest reference
                                 System.out.println("There is no response. It's just a corpse.");
                             }
                             return;
@@ -29,6 +34,7 @@ public class AttackCommand {
         System.out.println("You swing at... thin air.");
     }
 
+    // Math block to calculate random number damage done by players.
     private static void calculateDamage(Entity target, Player player) {
         int range = player.EquippedWeapon.DamageOutputMax + player.EquippedWeapon.DamageOutputMin + 1;
         int damageOutput = (int) (Math.random() * range) + player.EquippedWeapon.DamageOutputMin;

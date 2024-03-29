@@ -5,6 +5,7 @@ import src.main.java.ItemsAndEquipment.Equipment;
 import src.main.java.ItemsAndEquipment.Item;
 import src.main.java.WorldMap.Location;
 
+// Drops items in your inventory if it's not equipped.
 public class DropCommand {
     protected static void drop(GameData dataBase, String command) {
         command = command.replace("drop ", "");
@@ -28,6 +29,7 @@ public class DropCommand {
                 }
             }
         }
+        System.out.println("Wait, what am I dropping?");
     }
 }
 

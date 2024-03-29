@@ -1,6 +1,7 @@
 package src.main.java.WorldMap;
 
 import src.main.java.ItemsAndEquipment.*;
+import src.main.java.ItemsAndEquipment.UsableItems.EngravedKey;
 import src.main.java.Entities.Entity;
 import src.main.java.Entities.Neutral.*;
 import src.main.java.Entities.Hostile.*;
@@ -10,6 +11,9 @@ import java.util.ArrayList;
 import src.org.json.JSONArray;
 import src.org.json.JSONObject;
 
+/* This entire file is dedicated to constructing the map.
+ * All available data can be found in src/main/java/JsonFiles
+ */
 public class LocationConstructor {
     public static ArrayList<Location> locationArrayConstructor(
             ArrayList<JSONObject> locations,
@@ -19,39 +23,41 @@ public class LocationConstructor {
         try {
             ArrayList<Location> locationList = new ArrayList<>();
 
-        for (JSONObject location : locations) {
+            for (JSONObject location : locations) { // Foreach Location in Locations.json
 
-            String type = location.get("Type").toString();
-            JSONArray coordinates = location.getJSONArray("Coordinates");
-            ArrayList<Integer> coords = new ArrayList<>();
+                String type = location.get("Type").toString();
+                JSONArray coordinates = location.getJSONArray("Coordinates");
+                ArrayList<Integer> coords = new ArrayList<>();
 
-            for (Object number : coordinates) {
-                coords.add((int) number);
+                for (Object number : coordinates) {
+                    coords.add((int) number);
+                }
+
+                Boolean isPassable = (Boolean) location.get("IsPassable");
+                JSONArray itemsAtLocation = location.getJSONArray("Items");
+                JSONArray entitiesAtLocation = location.getJSONArray("Entities");
+
+                ArrayList<Item> locationItems = itemLister(items, itemsAtLocation);
+                ArrayList<Entity> locationEntities = entityLister(entities, entitiesAtLocation);
+
+                Location locationInsert = new Location(type, coords, isPassable,
+                        locationItems, locationEntities);
+
+                locationList.add(locationInsert);
             }
+            return locationList;
 
-            Boolean isPassable = (Boolean) location.get("IsPassable");
-            JSONArray itemsAtLocation = location.getJSONArray("Items");
-            JSONArray entitiesAtLocation = location.getJSONArray("Entities");
-
-            ArrayList<Item> locationItems = itemLister(items, itemsAtLocation);
-            ArrayList<Entity> locationEntities = entityLister(entities, entitiesAtLocation);
-
-            Location locationInsert = new Location(type, coords, isPassable,
-                    locationItems, locationEntities);
-
-            locationList.add(locationInsert);
+        } catch (Exception e) {
+            System.out.println(e.getStackTrace());
+            System.out.println(e.getLocalizedMessage());
+            return null;
         }
-        return locationList;
-
-    } catch (Exception e) {
-        System.out.println(e.getStackTrace());
-        System.out.println(e.getLocalizedMessage());
-        return null;
-    }
     }
 
     private static ArrayList<Item> itemLister(ArrayList<JSONObject> itemsObject, JSONArray itemsArray) {
-
+        /*
+         * Creates an array list out of the things in the location's Json Names.
+         */
         ArrayList<Item> itemsList = new ArrayList<>();
 
         if (itemsArray.get(0) == "") {
@@ -69,6 +75,10 @@ public class LocationConstructor {
                         Armor armor = new Armor(item.getString("Name"), item.getInt("Defence"),
                                 item.getString("Description"));
                         itemsList.add(armor);
+                    } else if (item.get("Type").equals("Engraved Key")) {
+                        EngravedKey engravedKey = new EngravedKey(item.getString("Name"),
+                                item.getString("Description"));
+                        itemsList.add(engravedKey);
                     } else {
                         Item regular = new Item(item.getString("Name"), item.getString("Description"));
                         itemsList.add(regular);
@@ -80,7 +90,9 @@ public class LocationConstructor {
     }
 
     private static ArrayList<Entity> entityLister(ArrayList<JSONObject> entitiesObject, JSONArray entitiesArray) {
-
+        /*
+         * Creates an array list out of the entities in the location's Json Names.
+         */
         ArrayList<Entity> entityArrayList = new ArrayList<>();
 
         if (entitiesArray.get(0) == "") {

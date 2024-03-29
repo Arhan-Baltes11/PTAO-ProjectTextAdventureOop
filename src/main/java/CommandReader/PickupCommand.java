@@ -4,6 +4,7 @@ import src.main.java.GameData;
 import src.main.java.ItemsAndEquipment.Item;
 import src.main.java.WorldMap.Location;
 
+// Picks up items on the location.
 public class PickupCommand {
     protected static void pickup(GameData dataBase, String command) {
         command = command.replace("pickup ", "");
@@ -20,5 +21,6 @@ public class PickupCommand {
                 }
             }
         }
+        System.out.println("What am I picking up? Am I seeing it right?");
     }
 }

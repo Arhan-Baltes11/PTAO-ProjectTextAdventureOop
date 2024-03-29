@@ -1,6 +1,5 @@
 package src.main.java.CommandReader;
 
-import java.lang.reflect.Field;
 import java.util.ArrayList;
 
 
@@ -9,6 +8,7 @@ import src.main.java.ItemsAndEquipment.Item;
 import src.main.java.WorldMap.Location;
 import src.main.java.Entities.Entity;
 
+// Look at a direction.
 public class LookCommand {
     protected static void look(GameData dataBase, String direction) {
         switch (direction) {
@@ -26,6 +26,9 @@ public class LookCommand {
                 break;
             case "around":
                 lookHere(dataBase);
+                break;
+            default:
+                System.out.println("I cannot see that place from here.");
                 break;
         }
     }

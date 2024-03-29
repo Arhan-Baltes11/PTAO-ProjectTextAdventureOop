@@ -5,6 +5,10 @@ import java.util.ArrayList;
 import src.main.java.ItemsAndEquipment.*;
 import src.main.java.ItemsAndEquipment.UsableItems.HealingPotion;
 
+/*
+ * The player class, with initial set up and everything.
+ */
+
 public class Player {
 
     public String Name = "Roald";
@@ -23,10 +27,6 @@ public class Player {
         Inventory.add(new Weapon("Shortsword", 1, 6, "A shortsword made of simple metal."));
         Inventory.add(new Armor("Common Clohing", 1, "Clothing worn by commoners. Better than nothing."));
         Inventory.add(new HealingPotion("Healing Potion", "A Potion that cures 10 health from the player.", 10));
-        Inventory.add(new Weapon("Tall Sword", 2, 8, "Named after Henrikus Tall."));
-
-        equipWeapon((Weapon) Inventory.get(0));
-        equipArmor((Armor) Inventory.get(1));
     }
 
     public void equipWeapon(Weapon weapon) {

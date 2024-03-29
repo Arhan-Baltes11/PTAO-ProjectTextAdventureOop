@@ -5,6 +5,9 @@ import src.main.java.Entities.Entity;
 
 import java.util.ArrayList;
 
+/*
+ * The entire construction of the Location Class.
+ */
 public class Location {
     public String Type;
     public Boolean IsPassable;

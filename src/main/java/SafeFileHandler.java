@@ -6,9 +6,16 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 import src.main.java.CommandReader.LoadCommand;
+import src.main.java.ItemsAndEquipment.Armor;
+import src.main.java.ItemsAndEquipment.Weapon;
 
 public class SafeFileHandler {
 
+    /*
+     * This entire Class is to check if save files exist or not
+     * On it ont existing, it will simply run as normal.
+     * Exposition is to open up with a story.
+     */
     public static void saveFileHandler(GameData dataBase) {
         String canonPath;
         try {
@@ -16,6 +23,8 @@ public class SafeFileHandler {
             String pathToSaveFile = canonPath + "/src/main/java/JsonFiles/Save.json";
             if (!Files.exists(Paths.get(pathToSaveFile))) {
                 exposition();
+                dataBase.Player.equipWeapon((Weapon) dataBase.Player.Inventory.get(0));
+                dataBase.Player.equipArmor((Armor) dataBase.Player.Inventory.get(1));
                 return;
             } else {
                 LoadCommand.load(dataBase);

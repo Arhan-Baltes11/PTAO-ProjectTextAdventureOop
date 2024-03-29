@@ -6,6 +6,19 @@ A Project by Arhan Baltes to test out Object Oriented Programming with Java, by 
 This project was started on 4th of March, but official programming started on the 11th, both in the year 2024.
 Git repository started on: 11th of March 2024.
 
+Everything built with JDK 22 (CFF 66).
+
+## How to play
+
+To play this game:
+1. go to the main file (PTAO-ProjectTextAdventureOop).
+2. type in the following command: `java src.main.java.Main`
+
+In case it gives a compilation error:
+3. type in the following command `javac src/main/java/Main.java`
+
+4. Play
+
 ## TO DO
 
 - Write the following commands:
@@ -13,14 +26,18 @@ Git repository started on: 11th of March 2024.
 
 - Add comments to functions to say how they work
 
-- Create a saving mechanic
-    - Test Saving Mechanic on the subject of Items on Location.
-
-- Create a way to allow the banishment spell
-
-- Make the merchant capable of being traded with
-
 ## Changelog
+
+### V 1.0.0 - Gilgamesh
+ - You can now finish the game from start to finish!
+ - Fixed a ton of bugs related to invalid commands.
+ - Fixed file saving and loading.
+ - All entities can talk now.
+ - Removed Tall Sword.
+    - The Tall Sword May be added in the future somewhere.
+ - Removed unnecessary code.
+ - Game Renamed to PTAO - Roald's Quest
+ - Project is now public.
 
 ### V 0.1.1 - Narrator
  - Overhauled most code to now be story based.

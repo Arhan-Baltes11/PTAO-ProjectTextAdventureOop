@@ -3,6 +3,7 @@ package src.main.java.CommandReader;
 import src.main.java.GameData;
 import src.main.java.ItemsAndEquipment.Item;
 
+// Uses an item in your inventory.
 public class UseCommand {
     protected static void use(GameData dataBase, String command) {
         command = command.replace("use ", "");
@@ -13,5 +14,6 @@ public class UseCommand {
                 return;
             }
         }
+        System.out.println("I can't use that!");
     }
 }

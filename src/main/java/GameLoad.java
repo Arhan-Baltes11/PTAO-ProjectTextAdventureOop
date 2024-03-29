@@ -14,13 +14,18 @@ public class GameLoad {
             SafeFileHandler.saveFileHandler(dataGame);
 
             Scanner comm = new Scanner(System.in);
-            CommandParser parse = new CommandParser();
+            CommandParser parse = new CommandParser(); // To read commands input in the scanner.
 
             while (true) {
                 if (dataGame.Player.Health <= 0) {
                     System.out.println("Player has died! Game over!!");
                     break;
                 }
+                /*
+                 * Whenever you enter a new grid,
+                 * You will always check the area around you first.
+                 * This can lead to console bloat, but it's not too big of a problem.
+                 */
                 parse.commandGet("look around", dataGame);
                 System.out.println("What will you do now?");
                 String issuedCommand = comm.nextLine();

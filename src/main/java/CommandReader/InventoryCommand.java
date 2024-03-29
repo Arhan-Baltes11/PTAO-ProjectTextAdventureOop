@@ -4,6 +4,7 @@ import src.main.java.GameData;
 import src.main.java.ItemsAndEquipment.Equipment;
 import src.main.java.ItemsAndEquipment.Item;
 
+// Looks at all your items in the inventory.
 public class InventoryCommand {
     protected static void checkInventory(GameData dataBase) {
 

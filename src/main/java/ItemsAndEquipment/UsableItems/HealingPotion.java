@@ -5,7 +5,7 @@ import src.main.java.ItemsAndEquipment.Item;
 
 public class HealingPotion extends Item {
 
-    int HealingAmount;
+    public int HealingAmount;
 
     public HealingPotion(String iName, String iDescription, int healingAmount) {
         super(iName, iDescription);
@@ -13,7 +13,7 @@ public class HealingPotion extends Item {
         HealingAmount = healingAmount;
     }
 
-    @Override
+    @Override // Override useItem in Item.java
     public void useItem(GameData dataBase) {
         dataBase.Player.Health = dataBase.Player.Health + HealingAmount;
         if (dataBase.Player.Health > dataBase.Player.MaxHealth) {

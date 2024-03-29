@@ -9,18 +9,6 @@ public class ElderBeast extends Entity {
         super(name, health, attackMin, attackMax);
     }
 
-    public void doomSpell(Player player) {
-
-    }
-
-    public void thunderSpell(Player player) {
-
-    }
-
-    public void titanSlam(Player player) {
-
-    }
-
     public void deathSpell(Player player) {
         System.out.println(Name + " Casts the curse of death on " + player.Name + "!");
         System.out.println("DIEEEEE!!!!!!!");

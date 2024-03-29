@@ -5,6 +5,7 @@ import src.main.java.Entities.Hostile.ElderBeast;
 import src.main.java.WorldMap.Location;
 import src.main.java.GameData;
 
+// Talk to an entity. Any entity.
 public class TalkCommand {
     protected static void talk(GameData dataBase, String command) {
         command = command.replace("talk ", "");
@@ -19,8 +20,10 @@ public class TalkCommand {
                                 ElderBeast iteratedBeing = (ElderBeast) being;
                                 iteratedBeing.deathSpell(dataBase.Player);
                             }
+                            return;
                         }
                     }
+                    System.out.println("I think I'm going crazy. Who am I talking to?");
                 }
             }
         }
