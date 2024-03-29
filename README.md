@@ -12,7 +12,8 @@ Everything built with JDK 22 (CFF 66).
 
 To play this game:
 1. go to the main file (PTAO-ProjectTextAdventureOop).
-2. type in the following command: `java src.main.java.Main`
+ - It is in the same folder as the README.md
+3. type in the following command: `java src.main.java.Main`
 
 In case it gives a compilation error:
 3. type in the following command `javac src/main/java/Main.java`
