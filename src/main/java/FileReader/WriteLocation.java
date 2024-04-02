@@ -5,8 +5,17 @@ import java.io.FileWriter;
 import src.org.json.JSONArray;
 import src.org.json.JSONObject;
 
+/*
+ * This entire class is dedicated to writing Location.json
+ */
+
 public class WriteLocation {
     public static void jsonLocationGrid(String filePath) {
+
+        /*
+         * Each array below here is made to select the squares that are plains,
+         * hills, walls, and so on.
+         */
         int[][] plains = { { 1, 9 }, { 1, 10 }, { 1, 11 }, { 1, 12 }, { 1, 13 }, { 2, 13 }, { 3, 2 }, { 3, 3 },
                 { 3, 4 }, { 3, 7 }, { 3, 12 }, { 3, 13 }, { 3, 14 }, { 4, 6 }, { 4, 7 }, { 4, 13 }, { 4, 14 },
                 { 4, 15 }, { 5, 2 }, { 5, 3 }, { 5, 6 }, { 5, 12 }, { 5, 13 }, { 5, 14 }, { 5, 15 }, { 6, 3 }, { 6, 4 },
@@ -35,15 +44,15 @@ public class WriteLocation {
         try {
             FileWriter fileWriter = new FileWriter(filePath);
             fileWriter.write("{");
-            for (int x = 1; x <= 15; x++) {
-                for (int y = 1; y <= 15; y++) {
+            for (int x = 1; x <= 15; x++) { // For loop for grid x.
+                for (int y = 1; y <= 15; y++) { // For loop for grid y.
                     JSONObject toWrite = new JSONObject();
                     JSONArray items = new JSONArray();
                     JSONArray entities = new JSONArray();
 
                     String constructor = "\"Grid(" + x + "," + y + ")\":";
 
-                    if (tableChecker(plains, x, y) == true) {
+                    if (tableChecker(plains, x, y) == true) { // Condition wall based on previously mentioned arrays.
                         toWrite.put("Type", "Plains");
                         toWrite.put("IsPassable", true);
                     } else if (tableChecker(hills, x, y) == true) {
@@ -134,6 +143,7 @@ public class WriteLocation {
         }
     }
 
+    // Checks the previous arrays to see if you can truly pass.
     private static Boolean tableChecker(int[][] gridArray, int x, int y) {
         for (int[] grid : gridArray) {
             if (grid[0] == x && grid[1] == y) {

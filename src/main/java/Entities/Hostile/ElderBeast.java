@@ -9,15 +9,17 @@ public class ElderBeast extends Entity {
         super(name, health, attackMin, attackMax);
     }
 
-    public void doomSpell(Player player) {
-
+    public void deathSpell(Player player) {
+        System.out.println(Name + " Casts the curse of death on " + player.Name + "!");
+        System.out.println("DIEEEEE!!!!!!!");
+        player.Health = 0;
     }
 
-    public void thunderSpell(Player player) {
-
-    }
-
-    public void titanSlam(Player player) {
-
+    @Override
+    public void respond() {
+        System.out.println("WHAT DO YOU THINK YOU'RE DOING?");
+        System.out.println("ARE YOU TRYING TO WASTE MY TIME?!");
+        System.out.println("LEAVE YOUR BANTER TO SOMEONE WHO CARES!!");
+        System.out.println("I SHALL PUNISH YOU FOR ATTEMPTING THAT!!!!");
     }
 }

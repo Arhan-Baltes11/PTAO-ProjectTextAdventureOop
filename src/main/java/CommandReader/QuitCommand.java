@@ -6,6 +6,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Scanner;
 
+// Quits the game.
 public class QuitCommand {
     protected static void quit(Scanner confirmationScanner) {
         String canonPath;

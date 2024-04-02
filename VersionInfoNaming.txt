@@ -4,3 +4,5 @@ Version: 0.0.3 - Butler - Named due to organising the project with JSON files, a
 Version: 0.0.4 - Cartographer - Someone who studies and uses maps. The world map has been made in this version. 
 Version: 0.0.5 - Wanderer - Someone who wanders aimlessly. named because the world is still empty and players cannot interact with surroundings just yet.
 Version: 0.1.0 - Sprout - A shoot of a plant; first fully-functioning build.
+Version: 0.1.1 - Narrator - Named so because there are a lot of story elements added into it.
+Version: 1.0.0 - Gilgamesh - Named after the Epic of Gilgamesh, one of the first written stories in history. I named it this as it is the very first full story.

@@ -14,8 +14,11 @@ So, it was suggested that everyone use C# for this project, because that's what 
 
 I always wanted to write in Java, but, the reason why I even bothered with it was because a few months ago, I told a friend that one of my new year's resolutions was to learn it, then show to him everything I've learned by July. Other than that, I saw that there was many requests for people who did Java programming, and I figured I might as well add that to the belt of experiences.
 
+## On Saving Files
 
+When it came to saving files, it got very complicated after I read through the whole thing. So, actually, let me explain the process of starting the game.
 
+So first, it will check if Save.json exists. If it doesn't, you just start the game from the beginning. Okay, then the next thing it will do is initialize GameData.java. So, it will create the world, load everything up with the constructor, etc. Then, it will read Save.json (if it exists) and then replace all the data within to reflect what's on the safe file.
 
 ## WriteLocation.java
 
@@ -38,3 +41,11 @@ Still, somewhere in the future (This was written in 22/03/2024, this bullet poin
 Whenever you want to end a game, you would have to quit. So, I decided to make a quit command. This one had several complications because, as it turns out, multiple scanners can lead to diverse problems. The first one is that if you close one scanner, all scanners are basically broken because System.in would be gone for the current instance.
 
 So, to bypass that, I wrote a new command to include a Scanner as it's parameter. I had to do a workaround, which is why the commands in `GameLoad.java` looks a bit weird. I definitely wanted to keep one method in `CommandParser.java` but looks like that became an impossibility.
+
+## Final Remarks
+
+I am mostly surprised at how quick everything runs in Java. Usually when I program in C#, the things I would do often takes time, but now, it feels like lightning.
+
+Other than how verbose Java can be sometimes, I really appreciate it for what it's doing. I'm unsure if I should keep going at it, but, it's been interesting.
+
+Arhan Baltes

@@ -14,6 +14,7 @@ import src.main.java.GameData;
 import src.main.java.ItemsAndEquipment.Item;
 import src.main.java.WorldMap.Location;
 
+// Creates a save file to allow play when closing the game. Or reloading a save.
 public class SaveCommand {
     protected static void save(GameData dataBase) {
         try {
@@ -33,14 +34,12 @@ public class SaveCommand {
                 JSONObject locationConstructedObject = new JSONObject();
                 JSONObject itemObject = arrayListReader(place.Items);
                 JSONObject entityObject = arrayListReader(place.Entities);
-                JSONArray coordinatesObject = new JSONArray();
+                JSONObject coordinatesObject = new JSONObject();
 
-                JSONArray itemArray = new JSONArray();
-                itemArray.put(itemObject);
-                coordinatesObject.put(place.Coordinates.get(0));
-                coordinatesObject.put(place.Coordinates.get(1));
+                coordinatesObject.put("XAxis", place.Coordinates.get(0));
+                coordinatesObject.put("YAxis", place.Coordinates.get(1));
 
-                locationConstructedObject.put("Items", itemArray);
+                locationConstructedObject.put("Items", itemObject);
                 locationConstructedObject.put("Entities", entityObject);
                 locationConstructedObject.put("Coordinates", coordinatesObject);
                 locationConstructedObject.put("IsPassable", place.IsPassable);
@@ -75,6 +74,7 @@ public class SaveCommand {
             FileWriter fileWriter = new FileWriter(pathToSaveFile);
             fileWriter.write(baseObject.toString());
             fileWriter.close();
+            System.out.println("Game has been saved.");
             return;
 
         } catch (Exception e) {

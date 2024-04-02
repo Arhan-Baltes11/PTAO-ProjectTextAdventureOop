@@ -10,9 +10,10 @@ public class EngravedKey extends Item {
 
     public EngravedKey(String iName, String iDescription) {
         super(iName, iDescription);
+        Type = "Engraved Key";
     }
 
-    @Override
+    @Override // Overrides useItem in Item.java
     public void useItem(GameData dataBase) {
         ArrayList<Integer> lockedLocation = new ArrayList<>();
         lockedLocation.add(8);
@@ -26,6 +27,7 @@ public class EngravedKey extends Item {
                     place.IsPassable = true;
                     System.out.println("The key fits inside the door. The way ahead is unlocked!");
                     dataBase.Player.Inventory.remove(this);
+                    return;
                 }
             }
         }

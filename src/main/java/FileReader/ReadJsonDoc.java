@@ -12,7 +12,9 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-
+/*
+ * Entirely dedicated to reading .json documents, especially with map and ArrayList iterators.
+ */
 public class ReadJsonDoc {
     public static String readObject(String filePath) {
         try {
@@ -30,6 +32,7 @@ public class ReadJsonDoc {
         try {
             String pathCanon = new File(".").getCanonicalPath();
 
+            // This all reads the json files found in JsonFiles
             String locationHeader = pathCanon + "/src/main/java/JsonFiles/Locations.json";
             String itemHeader = pathCanon + "/src/main/java/JsonFiles/Items.json";
             String entityHeader = pathCanon + "/src/main/java/JsonFiles/Entities.json";

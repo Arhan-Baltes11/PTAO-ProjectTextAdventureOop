@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 import src.main.java.GameData;
 
+/*
+ * This commandparser is there to load commands.
+ * Most of the static commands are protected in the CommandReader file.
+ */
 public class CommandParser {
 
     public void commandGet(String command, GameData dataBase) {
@@ -12,48 +16,55 @@ public class CommandParser {
         if (parsedInfo[0].equals("go")) {
             GoCommand.go(dataBase, parsedInfo[1]);
         }
-        if (parsedInfo[0].equals("look")) {
+        else if (parsedInfo[0].equals("look")) {
             LookCommand.look(dataBase, parsedInfo[1]);
         }
-        if (parsedInfo[0].equals("inventory")) {
+        else if (parsedInfo[0].equals("inventory")) {
             InventoryCommand.checkInventory(dataBase);
         }
-        if (parsedInfo[0].equals("equip")) {
+        else if (parsedInfo[0].equals("equip")) {
             EquipCommand.equip(dataBase, command);
         }
-        if (parsedInfo[0].equals("unequip")) {
+        else if (parsedInfo[0].equals("unequip")) {
             EquipCommand.unequip(dataBase, command);
         }
-        if (parsedInfo[0].equals("drop")) {
+        else if (parsedInfo[0].equals("drop")) {
             DropCommand.drop(dataBase, command);
         }
-        if (parsedInfo[0].equals("pickup")) {
+        else if (parsedInfo[0].equals("pickup")) {
             PickupCommand.pickup(dataBase, command);
         }
-        if (parsedInfo[0].equals("talk")) {
+        else if (parsedInfo[0].equals("talk")) {
             TalkCommand.talk(dataBase, command);
         }
-        if (parsedInfo[0].equals("use")) {
+        else if (parsedInfo[0].equals("use")) {
             UseCommand.use(dataBase, command);
         }
-        if (parsedInfo[0].equals("inspect")) {
+        else if (parsedInfo[0].equals("inspect")) {
             InspectCommand.inspect(dataBase, command);
         }
-        if (parsedInfo[0].equals("attack")) {
+        else if (parsedInfo[0].equals("attack")) {
             AttackCommand.attack(dataBase, command);
         }
-        if (parsedInfo[0].equals("banish")) {
+        else if (parsedInfo[0].equals("banish")) {
             BanishCommand.banish(dataBase);
         }
-        if (parsedInfo[0].equals("save")) {
+        else if (parsedInfo[0].equals("save")) {
             SaveCommand.save(dataBase);
         }
-        if (parsedInfo[0].equals("load")) {
+        else if (parsedInfo[0].equals("load")) {
             LoadCommand.load(dataBase);
+        } else {
+            System.out.println("I don't know how to do that. Am I missing something?");
         }
     }
 
-    public void quitCommand(Scanner scanner) {
-        QuitCommand.quit(scanner);
+    public void scanCommand(Scanner scanner, String commString) {
+        commString = commString.toLowerCase();
+        if (commString.equals("quit")) {
+            QuitCommand.quit(scanner);
+        } else if (commString.equals("help")) {
+            HelpCommand.help(scanner);
+        }
     }
 }

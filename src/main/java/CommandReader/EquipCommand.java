@@ -3,6 +3,7 @@ package src.main.java.CommandReader;
 import src.main.java.GameData;
 import src.main.java.ItemsAndEquipment.*;
 
+// Equips items that aren't equipped.
 public class EquipCommand {
     protected static void equip(GameData dataBase, String command) {
         command = command.replace("equip ", "");
@@ -10,6 +11,7 @@ public class EquipCommand {
         for (Item item : dataBase.Player.Inventory) {
             if (item instanceof Equipment) {
                 if (item.Name.toLowerCase().matches(command)) {
+                    System.out.println(item.Name + " is equipped!");
                     if (item instanceof Armor) {
                         Armor toEquip = (Armor) item;
                         toEquip.IsEquipped = true;
@@ -26,10 +28,12 @@ public class EquipCommand {
                 }
             }
         }
+        System.out.println("I can't equip something I don't know exists.");
     }
 
     protected static void unequip(GameData dataBase, String command) {
         command = command.replace("unequip ", "");
+        command = command.toLowerCase();
         for (Item equipment : dataBase.Player.Inventory) {
             if (equipment.Name.toLowerCase().equals(command)) {
                 if (equipment instanceof Armor) {
@@ -47,22 +51,5 @@ public class EquipCommand {
             }
         }
     }
-
-    // private static void unequip(GameData dataBase, Equipment toRemove) {
-    // for (Item equipment : dataBase.Player.Inventory) {
-    // if (equipment.equals(toRemove)) {
-    // if (equipment instanceof Armor) {
-    // Armor iteratedEquipment = (Armor) equipment;
-    // iteratedEquipment.IsEquipped = false;
-    // return;
-    // } else {
-    // Weapon iteratedEquipment = (Weapon) equipment;
-    // iteratedEquipment.IsEquipped = false;
-    // return;
-    // }
-
-    // }
-    // }
-    // }
 }
     

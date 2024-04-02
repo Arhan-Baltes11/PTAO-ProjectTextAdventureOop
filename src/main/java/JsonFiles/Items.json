@@ -67,7 +67,7 @@
     "Description": "A stone that is said to only be found at the corner of the world. Although worthless, it's said that it can be used to banish a great beast."
   },
   "item13": {
-    "Type": "Item",
+    "Type": "Engraved Key",
     "Name": "Engraved Key",
     "Description": "A key that has an engraving of a being with an imposing face. Perhaps you can open a door with this?"
   }

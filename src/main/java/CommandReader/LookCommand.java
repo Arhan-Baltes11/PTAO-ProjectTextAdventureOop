@@ -1,6 +1,5 @@
 package src.main.java.CommandReader;
 
-import java.lang.reflect.Field;
 import java.util.ArrayList;
 
 
@@ -9,6 +8,7 @@ import src.main.java.ItemsAndEquipment.Item;
 import src.main.java.WorldMap.Location;
 import src.main.java.Entities.Entity;
 
+// Look at a direction.
 public class LookCommand {
     protected static void look(GameData dataBase, String direction) {
         switch (direction) {
@@ -26,6 +26,9 @@ public class LookCommand {
                 break;
             case "around":
                 lookHere(dataBase);
+                break;
+            default:
+                System.out.println("I cannot see that place from here.");
                 break;
         }
     }
@@ -65,7 +68,7 @@ public class LookCommand {
         System.out.println(
                 location.IsPassable ? "You can pass through this place" : "You cannot pass through this place");
         System.out.println("The following items can be found on this location:");
-        if (location.Items != null) {
+        if (location.Items.size() != 0) {
             for (Item item : location.Items) {
                 System.out.println(item.Name + ", " + item.Description);
             }
@@ -73,7 +76,7 @@ public class LookCommand {
             System.out.println("Nothing");
         }
         System.out.println("The following entities can be found on this location:");
-        if (location.Entities != null) {
+        if (location.Entities.size() != 0) {
             for (Entity being : location.Entities) {
                 System.out.println(being.Name);
             }

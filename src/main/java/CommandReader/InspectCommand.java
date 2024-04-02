@@ -1,12 +1,11 @@
 package src.main.java.CommandReader;
 
-import java.lang.reflect.Field;
-
 import src.main.java.GameData;
 import src.main.java.ItemsAndEquipment.Armor;
 import src.main.java.ItemsAndEquipment.Item;
 import src.main.java.ItemsAndEquipment.Weapon;
 
+// Inspects items in your inventory.
 public class InspectCommand {
     protected static void inspect(GameData dataBase, String command) {
         command = command.replace("inspect ", "");
@@ -17,6 +16,7 @@ public class InspectCommand {
                 return;
             }
         }
+        System.out.println("I'm not sure what I'm expecting...");
     }
 
     private static void mentionSelf(Item item) {
