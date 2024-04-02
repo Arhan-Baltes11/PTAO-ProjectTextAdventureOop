@@ -125,6 +125,7 @@ public class WriteLocation {
                     System.out.println("Grid (" + x + " , " + y + ") has been registered");
                 }
             }
+            System.out.println("Hello world");
             fileWriter.write("}");
             fileWriter.close();
         } catch (Exception e) {
