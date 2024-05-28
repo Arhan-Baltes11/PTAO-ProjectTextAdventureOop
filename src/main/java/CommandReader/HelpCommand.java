@@ -16,6 +16,8 @@ public class HelpCommand {
             String helpCommand = scanner.nextLine();
             if (helpCommand.equals("Commands")) {
                 commandsList();
+            } else if (helpCommand.equals("Exit")) {
+                break;
             } else {
                 itemFinder(helpCommand);
             }
