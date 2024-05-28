@@ -29,6 +29,14 @@ In case it gives a compilation error:
 
 ## Changelog
 
+### V 1.0.1 - Janitor
+ - Cleaned up the folder structure
+ - Fixed a bug that is related to uppercases
+ - added a .gitignore to make sure no .class files go out anymore.
+    - Supposedly, they are redundant and misleading. Apologies if I did in the past.
+ - Deleted all .class files
+    - From what I understand, it should generate automatically when you compile everything anyway.
+
 ### V 1.0.0 - Gilgamesh
  - You can now finish the game from start to finish!
  - Fixed a ton of bugs related to invalid commands.

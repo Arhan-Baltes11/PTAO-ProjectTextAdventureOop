@@ -8,7 +8,7 @@ public class Main {
      */
     public static void main(String[] args) {
         System.out.println("PTAO - Roald's Quest");
-        System.out.println("Version: 1.0.0 - Gilgamesh");
+        System.out.println("Version: 1.0.1 - Janitor");
         System.out.println("");
         GameLoad.StartGame();
     }
