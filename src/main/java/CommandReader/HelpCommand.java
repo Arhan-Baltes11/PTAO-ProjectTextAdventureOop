@@ -12,6 +12,7 @@ public class HelpCommand {
         System.out.println("Type the following:");
         System.out.println("Commands = gives you a list of commands.");
         System.out.println("(Name of Previously Listed Item) = Find the location of the item (SPOILER!)");
+        System.out.println("Exit = Exits the help tab.");
         while (true) {
             String helpCommand = scanner.nextLine();
             if (helpCommand.equals("Commands")) {

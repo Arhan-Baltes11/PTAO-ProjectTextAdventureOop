@@ -11,7 +11,6 @@ import src.main.java.GameData;
 public class CommandParser {
 
     public void commandGet(String command, GameData dataBase) {
-        command = command.toLowerCase();
         String[] parsedInfo = command.split(" ");
         if (parsedInfo[0].equals("go")) {
             GoCommand.go(dataBase, parsedInfo[1]);

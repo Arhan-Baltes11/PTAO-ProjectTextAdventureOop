@@ -29,6 +29,7 @@ public class GameLoad {
                 parse.commandGet("look around", dataGame);
                 System.out.println("What will you do now?");
                 String issuedCommand = comm.nextLine();
+                issuedCommand = issuedCommand.toLowerCase();
                 if (issuedCommand.equals("quit") || issuedCommand.equals("help")) {
                     parse.scanCommand(comm, issuedCommand);
                 } else {
